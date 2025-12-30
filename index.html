@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Japandi Lounge – Group Accommodation near Den Bosch (Sauna, Jacuzzi, Pizza Oven)</title>
+  <meta name="description" content="Japandi Lounge is a characterful 1850 farmhouse just outside Den Bosch (North Brabant). Perfect for groups of friends or family: sauna, jacuzzi, pizza oven, fire pit, trampoline, large kitchen, big dining room & conservatory. Check availability and book via WhatsApp +31615230319." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:title" content="Japandi Lounge – Group Accommodation near Den Bosch" />
+  <meta property="og:description" content="1850 character farmhouse near Den Bosch for friends & family. Sauna, jacuzzi, pizza oven, fire pit, trampoline, large kitchen & dining room." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg" />
+
+  <!-- Basic styling (no frameworks needed) -->
+  <style>
+    :root{
+      --bg:#0f1210;
+      --card:#151a16;
+      --muted:#a9b4ac;
+      --text:#eef3ee;
+      --accent:#d9c8a7; /* warm japandi sand */
+      --accent2:#9bb59f; /* soft green */
+      --line:rgba(255,255,255,.10);
+      --shadow: 0 18px 50px rgba(0,0,0,.40);
+      --radius: 18px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 15% -10%, rgba(155,181,159,.25), transparent 60%),
+        radial-gradient(900px 600px at 85% 0%, rgba(217,200,167,.22), transparent 55%),
+        var(--bg);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
+    header{
+      position:sticky; top:0; z-index:5;
+      backdrop-filter: blur(10px);
+      background: rgba(15,18,16,.55);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px;
+      padding:14px 24px;
+      max-width:var(--max); margin:0 auto;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      text-decoration:none;
+      letter-spacing:.2px;
+    }
+    .dot{
+      width:10px; height:10px; border-radius:50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 6px rgba(217,200,167,.10);
+    }
+    .brand strong{font-weight:700}
+    .links{
+      display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .pill{
+      text-decoration:none;
+      border:1px solid var(--line);
+      padding:8px 12px;
+      border-radius:999px;
+      color:var(--text);
+      background: rgba(255,255,255,.04);
+    }
+    .pill:hover{border-color:rgba(255,255,255,.22)}
+    .cta{
+      background: linear-gradient(135deg, rgba(217,200,167,.95), rgba(155,181,159,.92));
+      color:#0b0f0c;
+      border:none;
+      font-weight:700;
+    }
+    .hero{
+      padding:34px 0 16px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){
+      .grid{grid-template-columns:1fr}
+      .nav{padding:14px 16px}
+      .wrap{padding:18px}
+    }
+    .card{
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .heroCard{
+      padding:22px;
+    }
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height:1.12;
+      letter-spacing:-.5px;
+    }
+    .sub{
+      margin:0 0 18px;
+      color:var(--muted);
+      font-size: 16px;
+    }
+    .kpis{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin:14px 0 0;
+    }
+    .kpi{
+      border:1px solid var(--line);
+      padding:10px 12px;
+      border-radius:14px;
+      background: rgba(0,0,0,.14);
+      font-size:14px;
+      color:var(--muted);
+    }
+    .kpi b{color:var(--text)}
+    .actions{
+      display:flex; gap:10px; flex-wrap:wrap;
+      margin-top:16px;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      text-decoration:none;
+      font-weight:700;
+    }
+    .btn:hover{border-color:rgba(255,255,255,.22)}
+    .btnPrimary{
+      border:none;
+      color:#0b0f0c;
+      background: linear-gradient(135deg, rgba(217,200,167,.96), rgba(155,181,159,.92));
+    }
+    .btnSmall{
+      padding:10px 12px;
+      border-radius:12px;
+      font-size:14px;
+      font-weight:700;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      padding:10px;
+    }
+    .img{
+      position:relative;
+      border-radius:14px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      min-height:160px;
+      background:#0b0f0c;
+    }
+    .img img{
+      width:100%; height:100%; object-fit:cover; display:block;
+      filter: saturate(1.05) contrast(1.02);
+      transform: scale(1.02);
+    }
+    .imgTall{grid-row:span 2; min-height:330px}
+    .section{
+      padding:16px 0;
+    }
+    h2{
+      margin:0 0 10px;
+      font-size: 22px;
+      letter-spacing:-.2px;
+    }
+    .muted{color:var(--muted)}
+    .cols{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:16px;
+    }
+    @media (max-width: 900px){
+      .cols{grid-template-columns:1fr}
+    }
+    ul{
+      margin:10px 0 0;
+      padding-left:18px;
+      color:var(--muted);
+    }
+    li{margin:6px 0}
+    .block{
+      padding:18px;
+    }
+    .fine{
+      font-size:13px;
+      color:rgba(238,243,238,.72);
+    }
+    .faq details{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius:14px;
+      padding:12px 14px;
+      margin:10px 0;
+    }
+    .faq summary{
+      cursor:pointer;
+      font-weight:800;
+    }
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:24px;
+      padding:20px 0 36px;
+      color:rgba(238,243,238,.70);
+      font-size:13px;
+    }
+    .badge{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(0,0,0,.14);
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
+
+  <!-- Structured data for SEO + LLM discoverability -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Japandi Lounge",
+    "description": "Group accommodation just outside Den Bosch (North Brabant). Characteristic farmhouse built in 1850 with sauna, jacuzzi, pizza oven, trampoline, fire pit, large kitchen, large dining room, and conservatory. Ideal for groups of friends or family weekends.",
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "North Brabant, Netherlands"
+    },
+    "nearbyLocation": {
+      "@type": "City",
+      "name": "Den Bosch"
+    },
+    "telephone": "+31615230319",
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Sauna", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Jacuzzi / Hot tub", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Pizza oven", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Fire pit", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Trampoline", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Large kitchen", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Large dining room", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Conservatory", "value": true }
+    ],
+    "image": [
+      "images/3C3875A2-54A2-428A-8803-1E423728DCA0.jpeg",
+      "images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg",
+      "images/AD098C1E-166E-42E9-90F4-E44E9A544D33.jpeg"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#top" aria-label="Japandi Lounge Home">
+        <span class="dot" aria-hidden="true"></span>
+        <strong>Japandi Lounge</strong>
+        <span class="badge">Group accommodation near Den Bosch</span>
+      </a>
+      <nav class="links" aria-label="Page sections">
+        <a class="pill" href="#facilities">Facilities</a>
+        <a class="pill" href="#availability">Availability</a>
+        <a class="pill" href="#location">Location</a>
+        <a class="pill cta" href="https://wa.me/31615230319" target="_blank" rel="noopener">WhatsApp Booking</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="grid">
+        <div class="card heroCard">
+          <h1>Japandi Lounge – a characterful 1850 farmhouse for groups near Den Bosch</h1>
+          <p class="sub">
+            A calm, stylish group stay in North Brabant for a <b>family weekend</b> or <b>friends getaway</b>.
+            Enjoy the best of both worlds: authentic beams and brickwork, plus modern comfort and facilities.
+          </p>
+
+          <div class="kpis">
+            <div class="kpi"><b>Built:</b> 1850</div>
+            <div class="kpi"><b>Type:</b> Group accommodation</div>
+            <div class="kpi"><b>Near:</b> Den Bosch</div>
+            <div class="kpi"><b>WhatsApp:</b> +31 6 15230319</div>
+          </div>
+
+          <div class="actions">
+            <a class="btn btnPrimary" href="https://wa.me/31615230319" target="_blank" rel="noopener">
+              Book / Ask a question on WhatsApp
+            </a>
+
+            <!-- Replace this with your real Airbnb calendar / iCal link -->
+            <a class="btn" href="https://www.airbnb.com/calendar/ical/YOUR-LISTING-ID.ics?s=YOUR_TOKEN"
+               target="_blank" rel="noopener">
+              Open Airbnb availability calendar
+            </a>
+
+            <a class="btn btnSmall" href="#availability">See availability section</a>
+          </div>
+
+          <p class="fine" style="margin-top:14px;">
+            Searching for: <i>group accommodation Den Bosch</i>, <i>large holiday home Brabant</i>,
+            <i>family house with sauna and jacuzzi</i>, <i>friends weekend near ’s-Hertogenbosch</i>.
+          </p>
+        </div>
+
+        <!-- Gallery -->
+        <div class="card">
+          <div class="gallery">
+            <div class="img imgTall">
+              <img src="images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg" alt="Japandi Lounge exterior – farmhouse at dusk near Den Bosch" loading="lazy">
+            </div>
+            <div class="img">
+              <img src="images/AD098C1E-166E-42E9-90F4-E44E9A544D33.jpeg" alt="Japandi Lounge living room with fireplace and seating" loading="lazy">
+            </div>
+            <div class="img">
+              <img src="images/BC2217E9-7DBD-4433-8012-A492DC5139AD.jpeg" alt="Japandi Lounge long dining table for groups" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACILITIES -->
+    <section id="facilities" class="section">
+      <div class="cols">
+        <div class="card block">
+          <h2>Facilities for a relaxed group weekend</h2>
+          <p class="muted">
+            Japandi Lounge is designed for real together-time: cook, eat, talk, relax, and enjoy the outdoors.
+            It’s ideal for <b>families</b> and <b>groups of friends</b> looking for comfort and quality near Den Bosch.
+          </p>
+          <ul>
+            <li><b>Sauna</b> and <b>Jacuzzi / hot tub</b></li>
+            <li><b>Pizza oven</b> (perfect for long evenings)</li>
+            <li><b>Fire pit</b> for outdoor drinks and warmth</li>
+            <li><b>Trampoline</b> for kids (and big kids)</li>
+            <li>Large <b>kitchen</b> with plenty of space for group cooking</li>
+            <li>Big <b>dining room</b> for shared meals</li>
+            <li>Bright <b>conservatory</b> for lounging and reading</li>
+          </ul>
+        </div>
+
+        <div class="card block">
+          <h2>Atmosphere: authentic + calm Japandi style</h2>
+          <p class="muted">
+            A traditional Brabant farmhouse (built in 1850) with warm textures, natural materials,
+            and soft lighting — ideal for a peaceful stay just outside the city.
+          </p>
+          <div class="gallery" style="padding:0; margin-top:12px;">
+            <div class="img">
+              <img src="images/43105A64-8642-42D4-A12A-BB3EA82EB30C.jpeg" alt="Japandi bedroom with wooden beams" loading="lazy">
+            </div>
+            <div class="img">
+              <img src="images/C51159F2-4C3F-4BB8-815F-EF64A2A6E7D5.jpeg" alt="Japandi Lounge bright living room seating area" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVAILABILITY -->
+    <section id="availability" class="section">
+      <div class="card block">
+        <h2>Availability & booking</h2>
+        <p class="muted" style="margin:0 0 10px;">
+          Check available dates via the Airbnb calendar link, then message us on WhatsApp for questions or a booking inquiry.
+        </p>
+
+        <div class="actions">
+          <!-- Replace with your real calendar link -->
+          <a class="btn" href="https://www.airbnb.com/calendar/ical/YOUR-LISTING-ID.ics?s=YOUR_TOKEN"
+             target="_blank" rel="noopener">
+            Open Airbnb availability calendar
+          </a>
+          <a class="btn btnPrimary" href="https://wa.me/31615230319" target="_blank" rel="noopener">
+            WhatsApp: +31 6 15230319
+          </a>
+        </div>
+
+        <p class="fine" style="margin-top:10px;">
+          Tip: once you paste your real Airbnb calendar link, Google and assistants can connect “availability” intent to the right destination.
+        </p>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location" class="section">
+      <div class="cols">
+        <div class="card block">
+          <h2>Location: just outside Den Bosch</h2>
+          <p class="muted">
+            Japandi Lounge is located in the countryside near <b>Den Bosch (’s-Hertogenbosch)</b>,
+            making it easy to combine a quiet group stay with city activities, restaurants, and day trips in North Brabant.
+          </p>
+          <ul>
+            <li>Great base for <b>Den Bosch</b> city centre, culture and food</li>
+            <li>Perfect for a <b>family weekend</b> or <b>friends getaway</b></li>
+            <li>Quiet setting with space to relax outdoors</li>
+          </ul>
+        </div>
+
+        <div class="card block">
+          <h2>Quick impression</h2>
+          <div class="gallery" style="padding:0; margin-top:12px;">
+            <div class="img">
+              <img src="images/3C3875A2-54A2-428A-8803-1E423728DCA0.jpeg" alt="Driveway view of Japandi Lounge farmhouse" loading="lazy">
+            </div>
+            <div class="img">
+              <img src="images/7361FDB3-81D3-434B-B3D5-A1C90B0DF629.jpeg" alt="Covered outdoor pizza oven and dining area" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (SEO booster) -->
+    <section class="section faq">
+      <div class="card block">
+        <h2>FAQ – group accommodation near Den Bosch</h2>
+
+        <details>
+          <summary>What is Japandi Lounge?</summary>
+          <p class="muted">
+            Japandi Lounge is a characterful farmhouse built in 1850, offered as a group accommodation just outside Den Bosch in North Brabant.
+            It’s designed for friends and families who want a calm, stylish place with great facilities.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is this suitable for a family weekend?</summary>
+          <p class="muted">
+            Yes. The house works very well for family groups: large kitchen, big dining room, conservatory, and outdoor options like the fire pit and trampoline.
+          </p>
+        </details>
+
+        <details>
+          <summary>What facilities are included?</summary>
+          <p class="muted">
+            Sauna, jacuzzi/hot tub, pizza oven, trampoline, fire pit, large kitchen, large dining room, and conservatory.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do we check availability?</summary>
+          <p class="muted">
+            Use the Airbnb availability calendar link on this page, then message us on WhatsApp for booking inquiries at +31 6 15230319.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap" style="padding:0">
+        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:space-between;">
+          <div>© <span id="y"></span> Japandi Lounge • Group accommodation near Den Bosch</div>
+          <div>
+            WhatsApp bookings: <a href="https://wa.me/31615230319" target="_blank" rel="noopener">+31 6 15230319</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
