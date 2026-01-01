@@ -5,24 +5,25 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>Japandi Lounge – Gîte de groupe à 10 minutes de Den Bosch (Sauna, Jacuzzi, Four à pizza)</title>
-  <meta name="description" content="Japandi Lounge est un gîte de groupe de caractère (ferme de 1850), situé à seulement 10 minutes de Den Bosch, dans le Brabant-Septentrional. Idéal pour familles et groupes d’amis : sauna, jacuzzi, four à pizza, brasero, trampoline, grande cuisine, grande salle à manger et véranda. Réservations via WhatsApp +31615230319." />
+  <meta name="description" content="Japandi Lounge est un gîte de groupe de caractère (ferme de 1850), situé à seulement 10 minutes de Den Bosch (Brabant-Septentrional). Idéal pour familles et groupes d’amis : sauna, jacuzzi, four à pizza, brasero, trampoline, grande cuisine, grande salle à manger et véranda. Disponibilités via calendrier Airbnb, demandes par WhatsApp +31615230319." />
   <meta name="robots" content="index, follow" />
 
-  <!-- Canonical + hreflang -->
+  <!-- Canonical + hreflang (multilingual SEO) -->
   <link rel="canonical" href="https://japandilounge.com/fr.html" />
+  <link rel="alternate" hreflang="nl" href="https://japandilounge.com/nl.html" />
   <link rel="alternate" hreflang="en" href="https://japandilounge.com/" />
   <link rel="alternate" hreflang="de" href="https://japandilounge.com/de.html" />
   <link rel="alternate" hreflang="fr" href="https://japandilounge.com/fr.html" />
   <link rel="alternate" hreflang="x-default" href="https://japandilounge.com/" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph / social sharing -->
   <meta property="og:title" content="Japandi Lounge – Gîte de groupe à 10 minutes de Den Bosch" />
-  <meta property="og:description" content="Ferme de caractère (1850) pour familles et amis avec sauna, jacuzzi, four à pizza, brasero, trampoline, grande cuisine et salle à manger." />
+  <meta property="og:description" content="Ferme de caractère (1850) pour familles et amis avec sauna, jacuzzi, four à pizza, brasero, trampoline, grande cuisine, grande salle à manger et véranda." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://japandilounge.com/fr.html" />
   <meta property="og:image" content="images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg" />
 
-  <!-- Styling (identique aux autres langues) -->
+  <!-- Basic styling -->
   <style>
     :root{
       --bg:#0f1210;
@@ -80,6 +81,7 @@
       border-radius:999px;
       color:var(--text);
       background: rgba(255,255,255,.04);
+      white-space:nowrap;
     }
     .pill:hover{border-color:rgba(255,255,255,.22)}
     .cta{
@@ -142,6 +144,7 @@
       color:#0b0f0c;
       background: linear-gradient(135deg, rgba(217,200,167,.96), rgba(155,181,159,.92));
     }
+    .btnSmall{padding:10px 12px; border-radius:12px; font-size:14px; font-weight:700}
     .gallery{
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -156,15 +159,29 @@
       min-height:160px;
       background:#0b0f0c;
     }
-    .img img{width:100%; height:100%; object-fit:cover}
+    .img img{
+      width:100%; height:100%; object-fit:cover; display:block;
+      filter: saturate(1.05) contrast(1.02);
+      transform: scale(1.02);
+    }
     .imgTall{grid-row:span 2; min-height:330px}
     .section{padding:16px 0}
-    h2{margin:0 0 10px; font-size:22px}
+    h2{margin:0 0 10px; font-size:22px; letter-spacing:-.2px}
     .muted{color:var(--muted)}
-    .cols{display:grid; grid-template-columns:1fr 1fr; gap:16px}
-    @media (max-width:900px){.cols{grid-template-columns:1fr}}
+    .cols{display:grid; grid-template-columns: 1fr 1fr; gap:16px}
+    @media (max-width: 900px){.cols{grid-template-columns:1fr}}
     ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
     li{margin:6px 0}
+    .block{padding:18px}
+    .fine{font-size:13px; color:rgba(238,243,238,.72)}
+    .faq details{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius:14px;
+      padding:12px 14px;
+      margin:10px 0;
+    }
+    .faq summary{cursor:pointer; font-weight:800}
     footer{
       border-top:1px solid var(--line);
       margin-top:24px;
@@ -172,80 +189,270 @@
       color:rgba(238,243,238,.70);
       font-size:13px;
     }
+    .badge{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background: rgba(0,0,0,.14);
+      color:var(--muted);
+      font-size:13px;
+      white-space:nowrap;
+    }
   </style>
 
-  <!-- Structured data -->
+  <!-- Structured data for SEO + AI discoverability -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LodgingBusiness",
     "name": "Japandi Lounge",
-    "description": "Gîte de groupe situé à 10 minutes de Den Bosch (Brabant-Septentrional). Ferme de caractère datant de 1850 avec sauna, jacuzzi, four à pizza, trampoline, brasero, grande cuisine, grande salle à manger et véranda.",
+    "url": "https://japandilounge.com/fr.html",
+    "description": "Gîte de groupe à 10 minutes de Den Bosch (Brabant-Septentrional). Ferme de caractère datant de 1850 avec sauna, jacuzzi, four à pizza, trampoline, brasero, grande cuisine, grande salle à manger et véranda. Idéal pour familles et groupes d’amis.",
+    "areaServed": { "@type": "AdministrativeArea", "name": "North Brabant, Netherlands" },
+    "nearbyLocation": { "@type": "City", "name": "Den Bosch" },
     "telephone": "+31615230319",
-    "url": "https://japandilounge.com/fr.html"
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Sauna", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Jacuzzi / Hot tub", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Four à pizza", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Brasero / feu de camp", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Trampoline", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Grande cuisine", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Grande salle à manger", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Véranda", "value": true }
+    ],
+    "image": [
+      "images/3C3875A2-54A2-428A-8803-1E423728DCA0.jpeg",
+      "images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg",
+      "images/AD098C1E-166E-42E9-90F4-E44E9A544D33.jpeg"
+    ]
   }
   </script>
 </head>
 
 <body>
-<header>
-  <div class="nav">
-    <a class="brand" href="#top">
-      <span class="dot"></span>
-      <strong>Japandi Lounge</strong>
-    </a>
-    <div class="links">
-      <a class="pill" href="/">EN</a>
-      <a class="pill" href="/de.html">DE</a>
-      <a class="pill cta" href="/fr.html">FR</a>
-      <a class="pill cta" href="https://wa.me/31615230319" target="_blank">WhatsApp</a>
-    </div>
-  </div>
-</header>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#top" aria-label="Accueil Japandi Lounge">
+        <span class="dot" aria-hidden="true"></span>
+        <strong>Japandi Lounge</strong>
+        <span class="badge">Gîte de groupe • 10 min de Den Bosch</span>
+      </a>
 
-<main id="top" class="wrap">
-<section class="hero">
-  <div class="grid">
-    <div class="card heroCard">
-      <h1>Japandi Lounge – gîte de groupe dans une ferme de 1850, à seulement 10 minutes de Den Bosch</h1>
-      <p class="sub">
-        Un séjour calme, élégant et spacieux pour un <b>week-end en famille</b> ou un <b>séjour entre amis</b> dans le Brabant-Septentrional.
-      </p>
+      <div class="links">
+        <a class="pill" href="/">EN</a>
+        <a class="pill" href="/de.html">DE</a>
+        <a class="pill" href="/nl.html">NL</a>
+        <a class="pill cta" href="/fr.html" aria-current="page">FR</a>
 
-      <div class="kpis">
-        <div class="kpi"><b>Année :</b> 1850</div>
-        <div class="kpi"><b>Type :</b> Gîte de groupe</div>
-        <div class="kpi"><b>Localisation :</b> 10 min de Den Bosch</div>
-        <div class="kpi"><b>WhatsApp :</b> +31 6 15230319</div>
-      </div>
+        <a class="pill" href="#equipements">Équipements</a>
+        <a class="pill" href="#disponibilites">Disponibilités</a>
+        <a class="pill" href="#localisation">Localisation</a>
 
-      <div class="actions">
-        <a class="btn btnPrimary" href="https://wa.me/31615230319" target="_blank">
-          Demande / réservation WhatsApp
-        </a>
-        <a class="btn" href="https://www.airbnb.nl/multicalendar/1570435347190997457" target="_blank">
-          Voir le calendrier Airbnb
-        </a>
+        <a class="pill cta"
+           href="https://wa.me/31615230319?text=Bonjour%20Japandi%20Lounge%20-%20nous%20souhaitons%20v%C3%A9rifier%20la%20disponibilit%C3%A9%20pour%20%5BDATES%5D%20pour%20%5BTAILLE%20DU%20GROUPE%5D%20personnes.%20Pouvez-vous%20confirmer%20le%20tarif%20et%20les%20options%20%3F"
+           target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
+  </header>
 
-    <div class="card">
-      <div class="gallery">
-        <div class="img imgTall"><img src="images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg"></div>
-        <div class="img"><img src="images/AD098C1E-166E-42E9-90F4-E44E9A544D33.jpeg"></div>
-        <div class="img"><img src="images/BC2217E9-7DBD-4433-8012-A492DC5139AD.jpeg"></div>
+  <main id="top" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="grid">
+        <div class="card heroCard">
+          <h1>Japandi Lounge – gîte de groupe dans une ferme de 1850, à seulement 10 minutes de Den Bosch (’s-Hertogenbosch)</h1>
+          <p class="sub">
+            Un séjour calme, élégant et spacieux dans le Brabant-Septentrional pour un <b>week-end en famille</b> ou un <b>séjour entre amis</b>.
+            Charme authentique (poutres, briques) + confort moderne et excellents équipements.
+          </p>
+
+          <div class="kpis">
+            <div class="kpi"><b>Année :</b> 1850</div>
+            <div class="kpi"><b>Type :</b> Gîte de groupe</div>
+            <div class="kpi"><b>Localisation :</b> 10 min de Den Bosch</div>
+            <div class="kpi"><b>WhatsApp :</b> +31 6 15230319</div>
+          </div>
+
+          <div class="actions">
+            <a class="btn btnPrimary"
+               href="https://wa.me/31615230319?text=Bonjour%20Japandi%20Lounge%20-%20nous%20souhaitons%20v%C3%A9rifier%20la%20disponibilit%C3%A9%20pour%20%5BDATES%5D%20pour%20%5BTAILLE%20DU%20GROUPE%5D%20personnes.%20Pouvez-vous%20confirmer%20le%20tarif%20et%20les%20options%20%3F"
+               target="_blank" rel="noopener">
+              Demande / réservation via WhatsApp
+            </a>
+
+            <a class="btn" href="https://www.airbnb.nl/multicalendar/1570435347190997457" target="_blank" rel="noopener">
+              Ouvrir le calendrier Airbnb
+            </a>
+
+            <a class="btn btnSmall" href="#disponibilites">Voir la section disponibilités</a>
+          </div>
+
+          <p class="fine" style="margin-top:14px;">
+            Recherches fréquentes : <i>gîte de groupe Den Bosch</i>, <i>grande maison de vacances Brabant</i>,
+            <i>maison avec sauna et jacuzzi</i>, <i>week-end entre amis à 10 minutes de ’s-Hertogenbosch</i>.
+          </p>
+        </div>
+
+        <!-- Gallery -->
+        <div class="card">
+          <div class="gallery">
+            <div class="img imgTall">
+              <img src="images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg" alt="Façade de Japandi Lounge – ferme de caractère près de Den Bosch" loading="lazy">
+            </div>
+            <div class="img">
+              <img src="images/AD098C1E-166E-42E9-90F4-E44E9A544D33.jpeg" alt="Salon avec cheminée et coin détente" loading="lazy">
+            </div>
+            <div class="img">
+              <img src="images/BC2217E9-7DBD-4433-8012-A492DC5139AD.jpeg" alt="Grande table pour repas de groupe" loading="lazy">
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<footer>
-  © <span id="y"></span> Japandi Lounge • Gîte de groupe à 10 minutes de Den Bosch
-</footer>
-</main>
+    <!-- FACILITIES -->
+    <section id="equipements" class="section">
+      <div class="cols">
+        <div class="card block">
+          <h2>Équipements pour un week-end de groupe relax</h2>
+          <p class="muted">
+            Japandi Lounge est fait pour passer du temps ensemble : cuisiner, manger, discuter, se détendre et profiter de l’extérieur.
+            Idéal pour <b>familles</b> et <b>amis</b> qui recherchent confort et qualité à <b>10 minutes de Den Bosch</b>.
+          </p>
+          <ul>
+            <li><b>Sauna</b> et <b>jacuzzi / bain à remous</b></li>
+            <li><b>Four à pizza</b> (parfait pour les longues soirées)</li>
+            <li><b>Brasero / feu de camp</b> pour chaleur et apéros</li>
+            <li><b>Trampoline</b> pour les enfants (et les grands)</li>
+            <li>Grande <b>cuisine</b> avec espace pour cuisiner en groupe</li>
+            <li>Grande <b>salle à manger</b> pour des repas partagés</li>
+            <li><b>Véranda</b> lumineuse pour se relaxer</li>
+          </ul>
+        </div>
 
-<script>
-document.getElementById("y").textContent = new Date().getFullYear();
-</script>
+        <div class="card block">
+          <h2>Ambiance : authenticité + style Japandi apaisant</h2>
+          <p class="muted">
+            Une ferme traditionnelle du Brabant (1850) avec matériaux chaleureux, textures naturelles et lumière douce —
+            idéale pour une pause tranquille tout en restant proche de la ville.
+          </p>
+          <div class="gallery" style="padding:0; margin-top:12px;">
+            <div class="img">
+              <img src="images/43105A64-8642-42D4-A12A-BB3EA82EB30C.jpeg" alt="Chambre avec poutres apparentes" loading="lazy">
+            </div>
+            <div class="img">
+              <img src="images/C51159F2-4C3F-4BB8-815F-EF64A2A6E7D5.jpeg" alt="Coin salon lumineux style Japandi" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVAILABILITY -->
+    <section id="disponibilites" class="section">
+      <div class="card block">
+        <h2>Disponibilités & réservation</h2>
+        <p class="muted" style="margin:0 0 10px;">
+          Consultez les dates disponibles via le calendrier Airbnb, puis envoyez-nous un message WhatsApp (dates + taille du groupe).
+        </p>
+
+        <div class="actions">
+          <a class="btn" href="https://www.airbnb.nl/multicalendar/1570435347190997457" target="_blank" rel="noopener">
+            Calendrier Airbnb (disponibilités)
+          </a>
+          <a class="btn btnPrimary"
+             href="https://wa.me/31615230319?text=Bonjour%20Japandi%20Lounge%20-%20nous%20souhaitons%20v%C3%A9rifier%20la%20disponibilit%C3%A9%20pour%20%5BDATES%5D%20pour%20%5BTAILLE%20DU%20GROUPE%5D%20personnes.%20Pouvez-vous%20confirmer%20le%20tarif%20et%20les%20options%20%3F"
+             target="_blank" rel="noopener">
+            WhatsApp : +31 6 15230319
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="localisation" class="section">
+      <div class="cols">
+        <div class="card block">
+          <h2>Localisation : à 10 minutes de Den Bosch</h2>
+          <p class="muted">
+            Japandi Lounge est située à la campagne mais tout près de la ville : <b>10 minutes de Den Bosch (’s-Hertogenbosch)</b>.
+            Parfait pour combiner calme et sorties (restaurants, culture, excursions) dans le Brabant-Septentrional.
+          </p>
+          <ul>
+            <li>Excellent point de départ pour le centre de <b>Den Bosch</b></li>
+            <li>Idéal pour <b>familles</b> et <b>séjours entre amis</b></li>
+            <li>Cadre paisible avec espace extérieur</li>
+          </ul>
+        </div>
+
+        <div class="card block">
+          <h2>Aperçu rapide</h2>
+          <div class="gallery" style="padding:0; margin-top:12px;">
+            <div class="img">
+              <img src="images/3C3875A2-54A2-428A-8803-1E423728DCA0.jpeg" alt="Allée et vue d’ensemble de la ferme" loading="lazy">
+            </div>
+            <div class="img">
+              <img src="images/7361FDB3-81D3-434B-B3D5-A1C90B0DF629.jpeg" alt="Espace extérieur couvert avec four à pizza" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+      <div class="card block">
+        <h2>FAQ – gîte de groupe à 10 minutes de Den Bosch</h2>
+
+        <details>
+          <summary>Qu’est-ce que Japandi Lounge ?</summary>
+          <p class="muted">
+            Japandi Lounge est une ferme de 1850 proposée comme <b>gîte de groupe à 10 minutes de Den Bosch</b>.
+            Elle est pensée pour les familles et les amis qui veulent un lieu calme, élégant et très bien équipé.
+          </p>
+        </details>
+
+        <details>
+          <summary>Est-ce adapté à un week-end en famille ?</summary>
+          <p class="muted">
+            Oui. La grande cuisine, la salle à manger et la véranda sont idéales. À l’extérieur : brasero et trampoline.
+          </p>
+        </details>
+
+        <details>
+          <summary>Quels équipements sont inclus ?</summary>
+          <p class="muted">
+            Sauna, jacuzzi/bain à remous, four à pizza, trampoline, brasero, grande cuisine, grande salle à manger, véranda.
+          </p>
+        </details>
+
+        <details>
+          <summary>Comment vérifier les disponibilités ?</summary>
+          <p class="muted">
+            Via le calendrier Airbnb sur cette page, puis contactez-nous sur WhatsApp : <b>+31 6 15230319</b>.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap" style="padding:0">
+        <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:space-between;">
+          <div>© <span id="y"></span> Japandi Lounge • Gîte de groupe à 10 minutes de Den Bosch</div>
+          <div>
+            WhatsApp : <a href="https://wa.me/31615230319" target="_blank" rel="noopener">+31 6 15230319</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
