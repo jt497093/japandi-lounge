@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Japandi Lounge – Gîte de groupe à 10 minutes de Den Bosch (Sauna, Jacuzzi, Four à pizza)</title>
+  <meta name="description" content="Japandi Lounge est un gîte de groupe de caractère (ferme de 1850), situé à seulement 10 minutes de Den Bosch, dans le Brabant-Septentrional. Idéal pour familles et groupes d’amis : sauna, jacuzzi, four à pizza, brasero, trampoline, grande cuisine, grande salle à manger et véranda. Réservations via WhatsApp +31615230319." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://japandilounge.com/fr.html" />
+  <link rel="alternate" hreflang="en" href="https://japandilounge.com/" />
+  <link rel="alternate" hreflang="de" href="https://japandilounge.com/de.html" />
+  <link rel="alternate" hreflang="fr" href="https://japandilounge.com/fr.html" />
+  <link rel="alternate" hreflang="x-default" href="https://japandilounge.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Japandi Lounge – Gîte de groupe à 10 minutes de Den Bosch" />
+  <meta property="og:description" content="Ferme de caractère (1850) pour familles et amis avec sauna, jacuzzi, four à pizza, brasero, trampoline, grande cuisine et salle à manger." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://japandilounge.com/fr.html" />
+  <meta property="og:image" content="images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg" />
+
+  <!-- Styling (identique aux autres langues) -->
+  <style>
+    :root{
+      --bg:#0f1210;
+      --card:#151a16;
+      --muted:#a9b4ac;
+      --text:#eef3ee;
+      --accent:#d9c8a7;
+      --accent2:#9bb59f;
+      --line:rgba(255,255,255,.10);
+      --shadow: 0 18px 50px rgba(0,0,0,.40);
+      --radius: 18px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 15% -10%, rgba(155,181,159,.25), transparent 60%),
+        radial-gradient(900px 600px at 85% 0%, rgba(217,200,167,.22), transparent 55%),
+        var(--bg);
+      line-height:1.5;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
+    header{
+      position:sticky; top:0; z-index:5;
+      backdrop-filter: blur(10px);
+      background: rgba(15,18,16,.55);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px;
+      padding:14px 24px;
+      max-width:var(--max); margin:0 auto;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      text-decoration:none;
+      letter-spacing:.2px;
+    }
+    .dot{
+      width:10px; height:10px; border-radius:50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 6px rgba(217,200,167,.10);
+    }
+    .brand strong{font-weight:700}
+    .links{display:flex; gap:10px; flex-wrap:wrap}
+    .pill{
+      text-decoration:none;
+      border:1px solid var(--line);
+      padding:8px 12px;
+      border-radius:999px;
+      color:var(--text);
+      background: rgba(255,255,255,.04);
+    }
+    .pill:hover{border-color:rgba(255,255,255,.22)}
+    .cta{
+      background: linear-gradient(135deg, rgba(217,200,167,.95), rgba(155,181,159,.92));
+      color:#0b0f0c;
+      border:none;
+      font-weight:700;
+    }
+    .hero{padding:34px 0 16px}
+    .grid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){
+      .grid{grid-template-columns:1fr}
+      .nav{padding:14px 16px}
+      .wrap{padding:18px}
+    }
+    .card{
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .heroCard{padding:22px}
+    h1{
+      margin:0 0 10px;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height:1.12;
+      letter-spacing:-.5px;
+    }
+    .sub{margin:0 0 18px; color:var(--muted); font-size:16px}
+    .kpis{display:flex; gap:10px; flex-wrap:wrap; margin:14px 0 0}
+    .kpi{
+      border:1px solid var(--line);
+      padding:10px 12px;
+      border-radius:14px;
+      background: rgba(0,0,0,.14);
+      font-size:14px;
+      color:var(--muted);
+    }
+    .kpi b{color:var(--text)}
+    .actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:16px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      text-decoration:none;
+      font-weight:700;
+    }
+    .btn:hover{border-color:rgba(255,255,255,.22)}
+    .btnPrimary{
+      border:none;
+      color:#0b0f0c;
+      background: linear-gradient(135deg, rgba(217,200,167,.96), rgba(155,181,159,.92));
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      padding:10px;
+    }
+    .img{
+      position:relative;
+      border-radius:14px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      min-height:160px;
+      background:#0b0f0c;
+    }
+    .img img{width:100%; height:100%; object-fit:cover}
+    .imgTall{grid-row:span 2; min-height:330px}
+    .section{padding:16px 0}
+    h2{margin:0 0 10px; font-size:22px}
+    .muted{color:var(--muted)}
+    .cols{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+    @media (max-width:900px){.cols{grid-template-columns:1fr}}
+    ul{margin:10px 0 0; padding-left:18px; color:var(--muted)}
+    li{margin:6px 0}
+    footer{
+      border-top:1px solid var(--line);
+      margin-top:24px;
+      padding:20px 0 36px;
+      color:rgba(238,243,238,.70);
+      font-size:13px;
+    }
+  </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Japandi Lounge",
+    "description": "Gîte de groupe situé à 10 minutes de Den Bosch (Brabant-Septentrional). Ferme de caractère datant de 1850 avec sauna, jacuzzi, four à pizza, trampoline, brasero, grande cuisine, grande salle à manger et véranda.",
+    "telephone": "+31615230319",
+    "url": "https://japandilounge.com/fr.html"
+  }
+  </script>
+</head>
+
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="#top">
+      <span class="dot"></span>
+      <strong>Japandi Lounge</strong>
+    </a>
+    <div class="links">
+      <a class="pill" href="/">EN</a>
+      <a class="pill" href="/de.html">DE</a>
+      <a class="pill cta" href="/fr.html">FR</a>
+      <a class="pill cta" href="https://wa.me/31615230319" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+<section class="hero">
+  <div class="grid">
+    <div class="card heroCard">
+      <h1>Japandi Lounge – gîte de groupe dans une ferme de 1850, à seulement 10 minutes de Den Bosch</h1>
+      <p class="sub">
+        Un séjour calme, élégant et spacieux pour un <b>week-end en famille</b> ou un <b>séjour entre amis</b> dans le Brabant-Septentrional.
+      </p>
+
+      <div class="kpis">
+        <div class="kpi"><b>Année :</b> 1850</div>
+        <div class="kpi"><b>Type :</b> Gîte de groupe</div>
+        <div class="kpi"><b>Localisation :</b> 10 min de Den Bosch</div>
+        <div class="kpi"><b>WhatsApp :</b> +31 6 15230319</div>
+      </div>
+
+      <div class="actions">
+        <a class="btn btnPrimary" href="https://wa.me/31615230319" target="_blank">
+          Demande / réservation WhatsApp
+        </a>
+        <a class="btn" href="https://www.airbnb.nl/multicalendar/1570435347190997457" target="_blank">
+          Voir le calendrier Airbnb
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="gallery">
+        <div class="img imgTall"><img src="images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg"></div>
+        <div class="img"><img src="images/AD098C1E-166E-42E9-90F4-E44E9A544D33.jpeg"></div>
+        <div class="img"><img src="images/BC2217E9-7DBD-4433-8012-A492DC5139AD.jpeg"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © <span id="y"></span> Japandi Lounge • Gîte de groupe à 10 minutes de Den Bosch
+</footer>
+</main>
+
+<script>
+document.getElementById("y").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
