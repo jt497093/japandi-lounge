@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YS62E7H90"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -13,50 +13,84 @@
     gtag('config', 'G-1YS62E7H90');
   </script>
 
-  <title>Japandi Lounge – Group Accommodation 10 minutes from Den Bosch</title>
-  <meta name="description" content="Characteristic 1800s farmhouse near Den Bosch. Japandi-inspired group accommodation with sauna, wood-fired hot tub, pizza oven and space for families, friends and corporate retreats." />
+  <!-- SEO -->
+  <title>Japandi Lounge | Characteristic Group Accommodation near Den Bosch</title>
+  <meta name="description" content="Characteristic group accommodation near Den Bosch. Restored 1800s farmhouse with Japandi design, sauna, wood-fired hot tub, pizza oven and space for families, friends and corporate retreats." />
   <meta name="robots" content="index, follow" />
 
+  <!-- Canonical & hreflang -->
   <link rel="canonical" href="https://japandilounge.com/" />
   <link rel="alternate" hreflang="en" href="https://japandilounge.com/" />
   <link rel="alternate" hreflang="de" href="https://japandilounge.com/de.html" />
   <link rel="alternate" hreflang="fr" href="https://japandilounge.com/fr.html" />
   <link rel="alternate" hreflang="x-default" href="https://japandilounge.com/" />
 
-  <meta property="og:title" content="Japandi Lounge – Group Accommodation near Den Bosch" />
-  <meta property="og:description" content="A restored 1800s farmhouse designed for calm, connection and mindful group stays near Den Bosch." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Japandi Lounge – Characteristic Group Accommodation near Den Bosch" />
+  <meta property="og:description" content="Restored 1800s farmhouse with Japandi interiors, sauna, wood-fired hot tub and pizza oven. Ideal for families, friends and corporate retreats." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://japandilounge.com/" />
   <meta property="og:image" content="images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg" />
 
-  <!-- STYLES (unchanged) -->
+  <!-- Styling -->
   <style>
-    /* your existing CSS – unchanged */
-    :root{--bg:#0f1210;--card:#151a16;--muted:#a9b4ac;--text:#eef3ee;--accent:#d9c8a7;--accent2:#9bb59f;--line:rgba(255,255,255,.10);--shadow:0 18px 50px rgba(0,0,0,.40);--radius:18px;--max:1100px}
+    :root{
+      --bg:#0f1210;
+      --card:#151a16;
+      --muted:#a9b4ac;
+      --text:#eef3ee;
+      --accent:#d9c8a7;
+      --accent2:#9bb59f;
+      --line:rgba(255,255,255,.10);
+      --shadow:0 18px 50px rgba(0,0,0,.40);
+      --radius:18px;
+      --max:1100px;
+    }
     *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;color:var(--text);background:radial-gradient(1200px 700px at 15% -10%,rgba(155,181,159,.25),transparent 60%),radial-gradient(900px 600px at 85% 0%,rgba(217,200,167,.22),transparent 55%),var(--bg);line-height:1.5}
-    a{color:inherit}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.6;
+    }
     .wrap{max-width:var(--max);margin:0 auto;padding:24px}
-    header{position:sticky;top:0;z-index:5;backdrop-filter:blur(10px);background:rgba(15,18,16,.55);border-bottom:1px solid var(--line)}
-    .nav{display:flex;justify-content:space-between;gap:16px;padding:14px 24px}
-    .brand{display:flex;gap:10px;text-decoration:none}
+    header{border-bottom:1px solid var(--line)}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .brand{display:flex;gap:10px;align-items:center;text-decoration:none}
     .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2))}
     .links{display:flex;gap:10px;flex-wrap:wrap}
-    .pill{border:1px solid var(--line);padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.04)}
-    .cta{background:linear-gradient(135deg,rgba(217,200,167,.95),rgba(155,181,159,.92));color:#0b0f0c;font-weight:700}
-    .card{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
-    .section{padding:16px 0}
-    h1,h2{letter-spacing:-.2px}
+    .pill{padding:8px 12px;border-radius:999px;border:1px solid var(--line);text-decoration:none}
+    .cta{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#000;font-weight:700;border:none}
+    h1{font-size:clamp(28px,4vw,44px);line-height:1.15}
+    h2{margin-top:0}
+    .card{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+    .section{padding:32px 0}
     .muted{color:var(--muted)}
-    .block{padding:18px}
-    footer{border-top:1px solid var(--line);margin-top:24px;padding:20px 0;color:rgba(238,243,238,.7);font-size:13px}
+    ul{padding-left:18px}
+    footer{border-top:1px solid var(--line);margin-top:40px;padding:20px 0;font-size:13px}
   </style>
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LodgingBusiness",
+    "name":"Japandi Lounge",
+    "description":"Characteristic group accommodation near Den Bosch in a restored 1800s farmhouse with Japandi design, sauna, wood-fired hot tub and pizza oven.",
+    "url":"https://japandilounge.com/",
+    "telephone":"+31615230319",
+    "areaServed":{"@type":"AdministrativeArea","name":"North Brabant, Netherlands"}
+  }
+  </script>
 </head>
 
 <body>
-<header>
+<header class="wrap">
   <div class="nav">
-    <a class="brand" href="#top"><span class="dot"></span><strong>Japandi Lounge</strong></a>
+    <a class="brand" href="/">
+      <span class="dot"></span><strong>Japandi Lounge</strong>
+    </a>
     <div class="links">
       <a class="pill cta" href="/">EN</a>
       <a class="pill" href="/de.html">DE</a>
@@ -66,60 +100,81 @@
   </div>
 </header>
 
-<main id="top" class="wrap">
+<main class="wrap">
 
-  <!-- WHY JAPANDI LOUNGE -->
-  <section id="why-japandi" class="section">
-    <div class="card block">
-      <h2>Why Japandi Lounge</h2>
+<!-- HERO -->
+<section class="section">
+  <div class="card">
+    <h1>Japandi Lounge – Characteristic Group Accommodation near ’s-Hertogenbosch (Den Bosch)</h1>
+    <p class="muted">
+      A restored farmhouse from the <strong>1800s</strong>, designed around <strong>Japandi interior principles</strong>
+      to offer calm, connection and a truly mindful group stay in the heart of the Netherlands.
+    </p>
+  </div>
+</section>
 
-      <p class="muted">
-        Most group accommodations focus on how many people you can fit inside.
-        <br><br>
-        <strong>Japandi Lounge focuses on how people connect once they are there.</strong>
-      </p>
+<!-- MAIN CONTENT -->
+<section class="section">
+  <h2>A mindful group stay in a historic farmhouse</h2>
+  <p class="muted">
+    Japandi Lounge is a characteristic group accommodation near Den Bosch, located in a charming farm building originally constructed in the 1800s.
+    Carefully restored to preserve its historic character, the property combines authentic architecture with a serene, contemporary atmosphere inspired by Japandi design.
+  </p>
+</section>
 
-      <p class="muted">
-        Set in a restored farmhouse from the 1800s near Den Bosch, Japandi Lounge is designed around calm, balance and togetherness.
-        The Japandi interior philosophy shapes every space — reducing noise, creating warmth and encouraging presence, conversation
-        and genuine downtime.
-      </p>
+<section class="section">
+  <h2>Facilities designed for connection and relaxation</h2>
+  <ul class="muted">
+    <li>Sauna and wood-fired hot tub</li>
+    <li>Wood-fired pizza oven and communal fire pit</li>
+    <li>Large communal kitchen, long dining table and generous lounge areas</li>
+    <li>Family-size trampoline for children and adults</li>
+  </ul>
+</section>
 
-      <ul>
-        <li><strong>Space to be together, without feeling crowded</strong> – generous communal areas balanced with quiet corners</li>
-        <li><strong>Facilities that naturally bring people together</strong> – sauna, wood-fired hot tub, pizza oven and fire pit</li>
-        <li><strong>A setting that slows you down</strong> – natural materials, soft lighting and a historic structure</li>
-        <li><strong>Central, yet peaceful</strong> – near Den Bosch, but once here the outside world fades away</li>
-      </ul>
+<section class="section">
+  <h2>Ideal for families, friends and corporate off-sites</h2>
+  <p class="muted">
+    Japandi Lounge is ideal for family weekends, friends’ getaways and multi-generational group stays.
+    The location is also perfectly suited for <strong>corporate heidagen (company off-sites)</strong> with overnight accommodation,
+    offering a peaceful environment for strategy, reflection and team building.
+  </p>
+  <p class="muted">
+    Optional experiences include pizza workshops, breathwork or yoga sessions,
+    and taxi or private chauffeur transport to nearby cities.
+  </p>
+</section>
 
-      <p class="muted" style="margin-top:16px;">
-        Whether you’re planning a family weekend, a friends’ getaway or a corporate off-site,
-        Japandi Lounge offers more than accommodation — it offers a shared experience people remember.
-      </p>
+<section class="section">
+  <h2>Central location in the Netherlands</h2>
+  <p class="muted">
+    Located near Den Bosch, Japandi Lounge is within approximately one hour’s drive of Amsterdam, Rotterdam,
+    The Hague and Eindhoven. Nearby attractions include the Efteling theme park,
+    Loonse & Drunense Duinen National Park, Utrecht and Breda.
+  </p>
+</section>
 
-      <div style="margin-top:16px;">
-        <a class="pill cta" href="https://wa.me/31615230319" target="_blank">
-          Curious if Japandi Lounge is right for your group? Let’s talk →
-        </a>
-      </div>
-    </div>
-  </section>
+<!-- SUMMARY BLOCK -->
+<section class="section card">
+  <h2>In short</h2>
+  <p class="muted">
+    Japandi Lounge is a characteristic group accommodation near Den Bosch,
+    located in a restored 1800s farmhouse. With Japandi-inspired interiors,
+    a sauna, wood-fired hot tub and generous communal spaces,
+    it is ideal for families, friends and corporate off-sites seeking calm,
+    quality and connection in the heart of the Netherlands.
+  </p>
+</section>
 
-  <!-- FAQ -->
-  <section class="section">
-    <div class="card block">
-      <h2>FAQ – Group accommodation near Den Bosch</h2>
-      <p class="muted">Check availability via Airbnb or contact us on WhatsApp for questions or group requests.</p>
-    </div>
-  </section>
-
-  <footer>
-    © <span id="y"></span> Japandi Lounge • Group accommodation near Den Bosch
-  </footer>
 </main>
+
+<footer class="wrap">
+  © <span id="y"></span> Japandi Lounge · WhatsApp +31 6 15230319
+</footer>
 
 <script>
   document.getElementById("y").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
