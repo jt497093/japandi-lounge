@@ -6,10 +6,10 @@
   <!-- English (Default) -->
   <url>
     <loc>https://japandilounge.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://japandilounge.com/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://japandilounge.com/de.html"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://japandilounge.com/fr.html"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://japandilounge.com/nl.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="http://japandilounge.com/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="http://japandilounge.com/de.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="http://japandilounge.com/fr.html"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="http://japandilounge.com/nl.html"/>
     <lastmod>2026-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
