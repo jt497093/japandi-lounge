@@ -25,15 +25,18 @@
   <link rel="canonical" href="https://japandilounge.com/">
 
   <meta property="og:title" content="Japandi Lounge | Group Accommodation & Retreats near Den Bosch">
+
   <meta
     property="og:description"
     content="Character farmhouse near Den Bosch with sauna, hot tub, pizza oven, fire pit and a calm Japandi atmosphere for groups and retreats."
   >
+
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://japandilounge.com/">
   <meta property="og:image" content="images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg">
 
   <style>
+
     :root {
       --bg: #eee0cf;
       --bg-soft: #f5ecdf;
@@ -89,6 +92,7 @@
       width: min(var(--max), calc(100% - 36px));
       margin: 0 auto;
     }
+
 
     /* NAVIGATION */
 
@@ -154,6 +158,7 @@
       padding-left: 16px;
       padding-right: 16px;
     }
+
 
     /* VIDEO HERO */
 
@@ -240,6 +245,7 @@
       max-width: 560px;
     }
 
+
     /* HERO INFORMATION */
 
     .hero {
@@ -251,7 +257,20 @@
       grid-template-columns: 1.05fr 0.95fr;
 
       gap: 18px;
-      align-items: start;
+      align-items: stretch;
+    }
+
+    .heroGrid > .heroCard {
+      height: 100%;
+    }
+
+    .heroGrid > .heroCard .gallery {
+      height: 100%;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .heroGrid > .heroCard .gallery .img {
+      aspect-ratio: auto;
     }
 
     .heroCard {
@@ -342,6 +361,7 @@
       font-weight: 500;
     }
 
+
     /* BUTTONS */
 
     .ctaRow {
@@ -394,6 +414,7 @@
       background: transparent;
     }
 
+
     /* GALLERIES */
 
     .gallery {
@@ -426,6 +447,7 @@
 
       display: block;
     }
+
 
     /* SECTIONS */
 
@@ -481,6 +503,7 @@
       margin: 7px 0;
     }
 
+
     /* RETREAT BLOCK */
 
     .retreatCard {
@@ -500,6 +523,7 @@
 
       letter-spacing: 3px;
     }
+
 
     /* FOOTER */
 
@@ -526,12 +550,27 @@
       justify-content: space-between;
     }
 
+
     /* MOBILE */
 
     @media (max-width: 960px) {
+
       .heroGrid,
       .split {
         grid-template-columns: 1fr;
+      }
+
+      .heroGrid > .heroCard {
+        height: auto;
+      }
+
+      .heroGrid > .heroCard .gallery {
+        height: auto;
+        grid-template-rows: auto;
+      }
+
+      .heroGrid > .heroCard .gallery .img {
+        aspect-ratio: 4 / 3;
       }
 
       .videoWrap {
@@ -547,7 +586,9 @@
       }
     }
 
+
     @media (max-width: 720px) {
+
       .nav {
         align-items: flex-start;
         flex-direction: column;
@@ -586,18 +627,23 @@
         font-size: 15px;
       }
     }
+
   </style>
 </head>
+
 
 <body>
 
 <header class="topbar">
+
   <div class="container">
+
     <nav class="nav">
 
       <a class="brand" href="#top">
         Japandi Lounge
       </a>
+
 
       <div class="navlinks">
 
@@ -628,15 +674,19 @@
       </div>
 
     </nav>
+
   </div>
+
 </header>
 
 
 <main id="top">
 
+
   <!-- VIDEO HERO -->
 
   <section class="videoHero">
+
     <div class="container">
 
       <div class="videoWrap">
@@ -655,6 +705,7 @@
           Your browser does not support the video tag.
 
         </video>
+
 
         <div class="videoOverlay">
 
@@ -680,15 +731,19 @@
       </div>
 
     </div>
+
   </section>
+
 
 
   <!-- INTRODUCTION -->
 
   <section class="hero">
+
     <div class="container">
 
       <div class="heroGrid">
+
 
         <div class="heroCard">
 
@@ -723,15 +778,13 @@
 
 
             <p class="lead">
-              Slow down, reconnect and spend meaningful time 
-              together, whether for a family stay, friends 
+              Slow down, reconnect and spend meaningful time
+              together, whether for a family stay, friends
               weekend or retreat.
             </p>
 
 
             <div class="kpis">
-
-
             </div>
 
 
@@ -754,10 +807,12 @@
             </div>
 
           </div>
+
         </div>
 
 
-        <!-- Maximum 4 images in this gallery -->
+
+        <!-- FOUR PHOTO GALLERY -->
 
         <div class="heroCard">
 
@@ -791,10 +846,13 @@
 
         </div>
 
+
       </div>
 
     </div>
+
   </section>
+
 
 
   <!-- FACILITIES -->
@@ -806,6 +864,7 @@
     <div class="container">
 
       <div class="split">
+
 
         <div class="card">
 
@@ -852,6 +911,7 @@
         </div>
 
 
+
         <div class="card">
 
           <h2>
@@ -864,8 +924,6 @@
             and recovery.
           </p>
 
-
-          <!-- Existing 2-photo gallery preserved -->
 
           <div
             class="gallery"
@@ -891,10 +949,13 @@
 
         </div>
 
+
       </div>
 
     </div>
+
   </section>
+
 
 
   <!-- RETREATS -->
@@ -905,11 +966,13 @@
 
       <div class="split">
 
+
         <div class="card retreatCard">
 
           <span class="retreatLabel">
             Rest • Nature • Connection
           </span>
+
 
           <h2>
             Retreats at Japandi Lounge
@@ -958,9 +1021,8 @@
         </div>
 
 
-        <div class="card">
 
-          <!-- Existing single image preserved -->
+        <div class="card">
 
           <div
             class="img"
@@ -974,10 +1036,13 @@
 
         </div>
 
+
       </div>
 
     </div>
+
   </section>
+
 
 
   <!-- LOCATION -->
@@ -1007,9 +1072,12 @@
       </div>
 
     </div>
+
   </section>
 
+
 </main>
+
 
 
 <footer class="footer">
@@ -1036,10 +1104,14 @@
 </footer>
 
 
+
 <script>
+
   document.getElementById("y").textContent =
     new Date().getFullYear();
+
 </script>
+
 
 </body>
 </html>
