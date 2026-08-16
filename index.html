@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TCPSZSL94Z"></script>
@@ -13,301 +13,577 @@
     gtag('config', 'G-TCPSZSL94Z');
   </script>
 
-  <title>Japandi Lounge, Group Accommodation & Silent Retreats near Den Bosch</title>
+  <title>Japandi Lounge | Group Accommodation & Retreats near Den Bosch</title>
 
-  <meta name="description" content="Japandi Lounge is a characterful farmhouse near Den Bosch offering luxury group accommodation and silent retreats with sauna, hot tub, fire pit and calm Japandi atmosphere." />
+  <meta
+    name="description"
+    content="Japandi Lounge is a characterful farmhouse near Den Bosch offering luxury group accommodation and retreats with sauna, hot tub, fire pit and a calm Japandi atmosphere."
+  >
 
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow">
 
-  <link rel="canonical" href="https://japandilounge.com/" />
-  <link rel="alternate" hreflang="en" href="https://japandilounge.com/" />
-  <link rel="alternate" hreflang="de" href="https://japandilounge.com/de.html" />
-  <link rel="alternate" hreflang="x-default" href="https://japandilounge.com/" />
+  <link rel="canonical" href="https://japandilounge.com/">
 
-  <meta property="og:title" content="Japandi Lounge – Group Accommodation & Silent Retreats near Den Bosch" />
-  <meta property="og:description" content="Character farmhouse near Den Bosch with sauna, hot tub, pizza oven, fire pit and calm Japandi atmosphere for groups and retreats." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://japandilounge.com/" />
-  <meta property="og:image" content="images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg" />
+  <meta property="og:title" content="Japandi Lounge | Group Accommodation & Retreats near Den Bosch">
+  <meta
+    property="og:description"
+    content="Character farmhouse near Den Bosch with sauna, hot tub, pizza oven, fire pit and a calm Japandi atmosphere for groups and retreats."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://japandilounge.com/">
+  <meta property="og:image" content="images/ACE66F63-E037-479A-A532-6B1FA75372FE.jpeg">
 
   <style>
-    :root{
-      --bg:#f7f6f2;
-      --card:#ffffff;
-      --text:#1f2a27;
-      --muted:#5c6b66;
-      --accent:#7aa08f;
-      --accent2:#d8e6df;
-      --line:#e7e4dc;
-      --shadow: 0 12px 30px rgba(20, 30, 25, 0.08);
-      --radius: 18px;
+    :root {
+      --bg: #eee0cf;
+      --bg-soft: #f5ecdf;
+      --card: #f8f1e8;
+      --text: #1d1d1b;
+      --muted: #655f57;
+      --accent: #1d1d1b;
+      --accent-soft: #dfc6a8;
+      --line: rgba(29, 29, 27, 0.12);
+
+      --shadow: 0 18px 45px rgba(40, 30, 20, 0.08);
+
+      --radius: 20px;
       --max: 1100px;
     }
 
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-
-    body{
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-      color:var(--text);
-      background: radial-gradient(1200px 500px at 20% -10%, var(--accent2), transparent 60%),
-                  radial-gradient(1200px 500px at 90% 0%, #eef3f0, transparent 55%),
-                  var(--bg);
-      line-height:1.55;
+    * {
+      box-sizing: border-box;
     }
 
-    a{color:inherit;text-decoration:none}
-    a:hover{opacity:.9}
-
-    .container{
-      max-width:var(--max);
-      margin:0 auto;
-      padding:0 18px;
+    html {
+      scroll-behavior: smooth;
     }
 
-    .topbar{
-      position:sticky;
-      top:0;
-      z-index:20;
-      backdrop-filter: blur(10px);
-      background: rgba(247, 246, 242, 0.75);
-      border-bottom:1px solid var(--line);
+    html,
+    body {
+      margin: 0;
+      padding: 0;
     }
 
-    .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      padding:14px 0;
-      flex-wrap:wrap;
-      gap:10px;
+    body {
+      font-family:
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      color: var(--text);
+      background: var(--bg-soft);
+      line-height: 1.6;
     }
 
-    .brand{
-      display:flex;
-      gap:10px;
-      align-items:center;
-      font-weight:650;
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
-    .brand .dot{
-      width:10px;
-      height:10px;
-      border-radius:99px;
-      background:var(--accent);
+    a:hover {
+      opacity: 0.82;
     }
 
-    .navlinks{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      align-items:center;
+    .container {
+      width: min(var(--max), calc(100% - 36px));
+      margin: 0 auto;
     }
 
-    .navlinks a{
-      padding:9px 12px;
-      border-radius:12px;
-      color:var(--muted);
-      font-size:14px;
+    /* NAVIGATION */
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+
+      backdrop-filter: blur(14px);
+
+      background: rgba(245, 236, 223, 0.92);
+
+      border-bottom: 1px solid var(--line);
     }
 
-    .navlinks a.active{
-      background:var(--card);
-      box-shadow:0 6px 18px rgba(0,0,0,.05);
-      color:var(--text);
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      min-height: 72px;
+
+      gap: 20px;
     }
 
-    .navlinks a.cta{
-      background:var(--accent);
-      color:#fff;
-      font-weight:600;
+    .brand {
+      font-size: 17px;
+      font-weight: 500;
+
+      text-transform: uppercase;
+      letter-spacing: 4px;
+
+      white-space: nowrap;
     }
 
-    .hero{
-      padding:34px 0 10px;
+    .navlinks {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      gap: 5px;
+      flex-wrap: wrap;
     }
 
-    .heroGrid{
-      display:grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap:18px;
-      align-items:stretch;
+    .navlinks a {
+      padding: 9px 11px;
+      border-radius: 10px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+      letter-spacing: 0.3px;
     }
 
-    .heroCard{
-      border:1px solid var(--line);
-      background: rgba(255,255,255,0.7);
+    .navlinks a:hover {
+      color: var(--text);
+    }
+
+    .navlinks a.cta {
+      background: var(--accent);
+      color: #fff;
+
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    /* VIDEO HERO */
+
+    .videoHero {
+      padding: 28px 0 12px;
+    }
+
+    .videoWrap {
+      position: relative;
+      width: 100%;
+
+      aspect-ratio: 16 / 8.2;
+
+      overflow: hidden;
+
+      border-radius: 24px;
+
+      background: #191919;
+
       box-shadow: var(--shadow);
+    }
+
+    .videoWrap video {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      display: block;
+    }
+
+    .videoOverlay {
+      position: absolute;
+      inset: 0;
+
+      display: flex;
+      align-items: flex-end;
+
+      padding: 46px;
+
+      background:
+        linear-gradient(
+          to top,
+          rgba(10, 10, 10, 0.56) 0%,
+          rgba(10, 10, 10, 0.15) 48%,
+          rgba(10, 10, 10, 0.03) 100%
+        );
+
+      pointer-events: none;
+    }
+
+    .videoOverlayContent {
+      max-width: 650px;
+      color: white;
+    }
+
+    .videoEyebrow {
+      margin-bottom: 8px;
+
+      text-transform: uppercase;
+
+      font-size: 12px;
+      letter-spacing: 4px;
+    }
+
+    .videoTitle {
+      margin: 0;
+
+      font-weight: 400;
+      font-size: clamp(38px, 6vw, 70px);
+
+      line-height: 1;
+
+      letter-spacing: 8px;
+
+      text-transform: uppercase;
+    }
+
+    .videoSubtitle {
+      margin: 15px 0 0;
+
+      font-size: 17px;
+      line-height: 1.5;
+
+      max-width: 560px;
+    }
+
+    /* HERO INFORMATION */
+
+    .hero {
+      padding: 18px 0 16px;
+    }
+
+    .heroGrid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+
+      gap: 18px;
+    }
+
+    .heroCard {
+      border: 1px solid var(--line);
+
+      background: rgba(248, 241, 232, 0.82);
+
+      box-shadow: var(--shadow);
+
       border-radius: var(--radius);
-      overflow:hidden;
+
+      overflow: hidden;
     }
 
-    .heroContent{
-      padding:26px 26px 22px;
+    .heroContent {
+      padding: 34px;
     }
 
-    .kicker{
-      display:inline-flex;
-      gap:10px;
-      align-items:center;
-      color:var(--muted);
-      font-size:14px;
-      margin-bottom:6px;
-      flex-wrap:wrap;
+    .kicker {
+      display: flex;
+      gap: 8px;
+
+      flex-wrap: wrap;
+
+      margin-bottom: 18px;
     }
 
-    .pill{
-      background:var(--accent2);
-      color:var(--text);
-      padding:6px 10px;
-      border-radius:999px;
-      border:1px solid var(--line);
+    .pill {
+      padding: 6px 11px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 999px;
+
+      color: var(--muted);
+
+      background: rgba(223, 198, 168, 0.28);
+
+      font-size: 12px;
+      letter-spacing: 0.3px;
     }
 
-    .h1{
-      font-size:40px;
-      line-height:1.08;
-      margin:10px 0 10px;
-      letter-spacing:-.6px;
+    .h1 {
+      margin: 0 0 18px;
+
+      font-size: clamp(34px, 5vw, 52px);
+
+      font-weight: 400;
+
+      line-height: 1.08;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
     }
 
-    .lead{
-      color:var(--muted);
-      font-size:16px;
-      margin:0 0 10px;
+    .lead {
+      margin: 0 0 14px;
+
+      color: var(--muted);
+
+      font-size: 16px;
     }
 
-    .kpis{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin:10px 0;
+    .kpis {
+      display: flex;
+      gap: 8px;
+
+      flex-wrap: wrap;
+
+      margin: 22px 0 0;
     }
 
-    .kpi{
-      border:1px solid var(--line);
-      padding:8px 12px;
-      border-radius:12px;
-      background:rgba(216,230,223,.35);
-      font-size:14px;
-      color:var(--muted);
+    .kpi {
+      border: 1px solid var(--line);
+
+      padding: 8px 12px;
+
+      border-radius: 10px;
+
+      font-size: 13px;
+
+      color: var(--muted);
     }
 
-    .kpi b{
-      color:var(--text);
+    .kpi b {
+      color: var(--text);
+      font-weight: 500;
     }
 
-    .ctaRow{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-      margin-top:14px;
+    /* BUTTONS */
+
+    .ctaRow {
+      display: flex;
+      gap: 10px;
+
+      flex-wrap: wrap;
+
+      margin-top: 24px;
     }
 
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:12px 14px;
-      border-radius:14px;
-      border:1px solid var(--line);
-      background: var(--card);
-      box-shadow: 0 10px 24px rgba(0,0,0,.06);
-      font-weight:600;
-      font-size:14px;
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 45px;
+
+      padding: 11px 16px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 10px;
+
+      background: transparent;
+
+      font-size: 13px;
+      font-weight: 500;
+
+      letter-spacing: 0.2px;
+
+      transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
     }
 
-    .btn.primary{
-      background:var(--accent);
-      border-color:transparent;
-      color:white;
+    .btn:hover {
+      transform: translateY(-1px);
     }
 
-    .btn.ghost{
-      background:transparent;
-      box-shadow:none;
+    .btn.primary {
+      background: var(--accent);
+
+      border-color: var(--accent);
+
+      color: #fff;
     }
 
-    .gallery{
-      display:grid;
+    .btn.ghost {
+      background: transparent;
+    }
+
+    /* GALLERIES */
+
+    .gallery {
+      display: grid;
+
       grid-template-columns: 1fr 1fr;
-      gap:10px;
-      padding:10px;
+
+      gap: 10px;
+
+      padding: 10px;
     }
 
-    .img{
-      border-radius:14px;
-      overflow:hidden;
-      border:1px solid var(--line);
-      background:var(--accent2);
-      aspect-ratio:4/3;
+    .img {
+      border-radius: 14px;
+
+      overflow: hidden;
+
+      border: 1px solid var(--line);
+
+      background: var(--accent-soft);
+
+      aspect-ratio: 4 / 3;
     }
 
-    .img img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
+    .img img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      display: block;
     }
 
-    .section{
-      padding:26px 0;
+    /* SECTIONS */
+
+    .section {
+      padding: 30px 0;
     }
 
-    .split{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:18px;
+    .split {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 18px;
     }
 
-    .card{
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.75);
+    .card {
+      border: 1px solid var(--line);
+
+      background: rgba(248, 241, 232, 0.82);
+
       border-radius: var(--radius);
+
       box-shadow: var(--shadow);
-      padding:22px;
+
+      padding: 28px;
     }
 
-    .card h2{
-      margin:0 0 8px;
-      font-size:22px;
+    .card h2 {
+      margin: 0 0 12px;
+
+      font-size: 24px;
+
+      font-weight: 400;
+
+      letter-spacing: 1.2px;
     }
 
-    .card p{
-      margin:0 0 10px;
-      color:var(--muted);
+    .card p {
+      margin: 0 0 12px;
+
+      color: var(--muted);
     }
 
-    .list{
-      margin:10px 0 0;
-      padding-left:18px;
-      color:var(--muted);
+    .list {
+      margin: 14px 0 0;
+
+      padding-left: 20px;
+
+      color: var(--muted);
     }
 
-    .list li{
-      margin:7px 0;
+    .list li {
+      margin: 7px 0;
     }
 
-    .footer{
-      padding:28px 0 36px;
-      color:var(--muted);
-      border-top:1px solid var(--line);
-      margin-top:22px;
-      font-size:13px;
+    /* RETREAT BLOCK */
+
+    .retreatCard {
+      background: var(--bg);
     }
 
-    .footer-inner{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      align-items:center;
-      justify-content:space-between;
+    .retreatLabel {
+      display: block;
+
+      margin-bottom: 11px;
+
+      color: var(--muted);
+
+      font-size: 11px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 3px;
     }
 
-    @media (max-width: 960px){
-      .heroGrid{grid-template-columns:1fr}
-      .split{grid-template-columns:1fr}
-      .h1{font-size:32px}
+    /* FOOTER */
+
+    .footer {
+      padding: 34px 0 40px;
+
+      margin-top: 25px;
+
+      border-top: 1px solid var(--line);
+
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      display: flex;
+
+      gap: 10px;
+
+      flex-wrap: wrap;
+
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 960px) {
+      .heroGrid,
+      .split {
+        grid-template-columns: 1fr;
+      }
+
+      .videoWrap {
+        aspect-ratio: 4 / 3;
+      }
+
+      .videoOverlay {
+        padding: 28px;
+      }
+
+      .videoTitle {
+        letter-spacing: 4px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+
+        padding: 15px 0;
+      }
+
+      .brand {
+        letter-spacing: 3px;
+      }
+
+      .navlinks {
+        justify-content: flex-start;
+      }
+
+      .heroContent,
+      .card {
+        padding: 22px;
+      }
+
+      .videoHero {
+        padding-top: 16px;
+      }
+
+      .videoWrap {
+        border-radius: 17px;
+
+        aspect-ratio: 3 / 4;
+      }
+
+      .videoOverlay {
+        padding: 22px;
+      }
+
+      .videoSubtitle {
+        font-size: 15px;
+      }
     }
   </style>
 </head>
@@ -319,17 +595,26 @@
     <nav class="nav">
 
       <a class="brand" href="#top">
-        <span class="dot"></span>
-        <strong>Japandi Lounge</strong>
+        Japandi Lounge
       </a>
 
       <div class="navlinks">
-        <a href="/" class="active">EN</a>
-        <a href="/de.html">DE</a>
-        <a href="#facilities">Facilities</a>
-        <a href="/availability.html">Availability</a>
-        <a href="/silent-retreat.html">Retreats</a>
-        <a href="#location">Location</a>
+
+        <a href="#facilities">
+          Facilities
+        </a>
+
+        <a href="/availability.html">
+          Availability
+        </a>
+
+        <a href="/silent-retreat.html">
+          Retreats
+        </a>
+
+        <a href="#location">
+          Location
+        </a>
 
         <a
           href="https://wa.me/31615230319"
@@ -338,15 +623,66 @@
           class="cta">
           WhatsApp Booking
         </a>
+
       </div>
 
     </nav>
   </div>
 </header>
 
+
 <main id="top">
 
-  <!-- HERO -->
+  <!-- VIDEO HERO -->
+
+  <section class="videoHero">
+    <div class="container">
+
+      <div class="videoWrap">
+
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="images/JL_GardenFire.jpeg">
+
+          <source
+            src="videos/japandi-lounge.mp4"
+            type="video/mp4">
+
+          Your browser does not support the video tag.
+
+        </video>
+
+        <div class="videoOverlay">
+
+          <div class="videoOverlayContent">
+
+            <div class="videoEyebrow">
+              Group accommodation & retreats
+            </div>
+
+            <h1 class="videoTitle">
+              Japandi Lounge
+            </h1>
+
+            <p class="videoSubtitle">
+              A peaceful farmhouse near Den Bosch designed for connection,
+              relaxation and meaningful time together.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- INTRODUCTION -->
 
   <section class="hero">
     <div class="container">
@@ -354,31 +690,61 @@
       <div class="heroGrid">
 
         <div class="heroCard">
+
           <div class="heroContent">
 
             <div class="kicker">
-              <span class="pill">Group accommodation</span>
-              <span class="pill">Retreats</span>
-              <span class="pill">10 min from Den Bosch</span>
+
+              <span class="pill">
+                Group accommodation
+              </span>
+
+              <span class="pill">
+                Retreats
+              </span>
+
+              <span class="pill">
+                10 min from Den Bosch
+              </span>
+
             </div>
 
-            <h1 class="h1">
-              Japandi Lounge
-            </h1>
+
+            <h2 class="h1">
+              A place to slow down
+            </h2>
+
 
             <p class="lead">
-              A restored Brabant farmhouse combining historic character with a calm Japandi atmosphere inspired by Japanese minimalism and Scandinavian warmth.
+              A restored Brabant farmhouse combining historic character
+              with a calm Japandi atmosphere inspired by Japanese
+              minimalism and Scandinavian warmth.
             </p>
 
+
             <p class="lead">
-              Designed for slowing down, reconnecting and spending meaningful time together — whether for a family stay, friends weekend or silent retreat.
+              Designed for slowing down, reconnecting and spending
+              meaningful time together, whether for a family stay,
+              friends weekend or retreat.
             </p>
+
 
             <div class="kpis">
-              <div class="kpi"><b>Location:</b> Near Den Bosch</div>
-              <div class="kpi"><b>Sauna + hot tub</b></div>
-              <div class="kpi"><b>WhatsApp:</b> +31 6 15230319</div>
+
+              <div class="kpi">
+                <b>Location:</b> Near Den Bosch
+              </div>
+
+              <div class="kpi">
+                <b>Sauna + hot tub</b>
+              </div>
+
+              <div class="kpi">
+                <b>WhatsApp:</b> +31 6 15230319
+              </div>
+
             </div>
+
 
             <div class="ctaRow">
 
@@ -390,7 +756,9 @@
                 Book / Ask a question
               </a>
 
-              <a class="btn ghost" href="/availability.html">
+              <a
+                class="btn ghost"
+                href="/availability.html">
                 Availability
               </a>
 
@@ -399,15 +767,37 @@
           </div>
         </div>
 
+
+        <!-- Maximum 4 images in this gallery -->
+
         <div class="heroCard">
 
           <div class="gallery">
-            <div class="img"><img src="images/JL_LivingroomSofa2.jpeg" alt=""></div>
-            <div class="img"><img src="images/JL_Kitchen.jpeg" alt=""></div>
-            <div class="img"><img src="images/JL_Hall.jpeg" alt=""></div>
-            <div class="img"><img src="images/JL_Bedroom1.jpeg" alt=""></div>
-            <div class="img"><img src="images/JL_BathroomBath.jpeg" alt=""></div>
-            <div class="img"><img src="images/JL_GardenFire.jpeg" alt=""></div>
+
+            <div class="img">
+              <img
+                src="images/JL_LivingroomSofa2.jpeg"
+                alt="Japandi Lounge living room">
+            </div>
+
+            <div class="img">
+              <img
+                src="images/JL_Kitchen.jpeg"
+                alt="Japandi Lounge kitchen">
+            </div>
+
+            <div class="img">
+              <img
+                src="images/JL_Hall.jpeg"
+                alt="Japandi Lounge interior">
+            </div>
+
+            <div class="img">
+              <img
+                src="images/JL_Bedroom1.jpeg"
+                alt="Japandi Lounge bedroom">
+            </div>
+
           </div>
 
         </div>
@@ -417,41 +807,97 @@
     </div>
   </section>
 
+
   <!-- FACILITIES -->
 
-  <section id="facilities" class="section">
+  <section
+    id="facilities"
+    class="section">
+
     <div class="container">
 
       <div class="split">
 
         <div class="card">
 
-          <h2>Facilities for groups & retreats</h2>
+          <h2>
+            Facilities for groups & retreats
+          </h2>
 
           <ul class="list">
-            <li>Wood-fired hot tub / jacuzzi</li>
-            <li>Sauna for deep relaxation</li>
-            <li>Wood-fired pizza oven</li>
-            <li>Outdoor fire pit</li>
-            <li>Large communal kitchen</li>
-            <li>Long dining table for shared meals</li>
-            <li>Large indoor and outdoor lounge areas</li>
-            <li>Calm countryside setting near Den Bosch</li>
+
+            <li>
+              Wood-fired hot tub / jacuzzi
+            </li>
+
+            <li>
+              Sauna for deep relaxation
+            </li>
+
+            <li>
+              Wood-fired pizza oven
+            </li>
+
+            <li>
+              Outdoor fire pit
+            </li>
+
+            <li>
+              Large communal kitchen
+            </li>
+
+            <li>
+              Long dining table for shared meals
+            </li>
+
+            <li>
+              Large indoor and outdoor lounge areas
+            </li>
+
+            <li>
+              Calm countryside setting near Den Bosch
+            </li>
+
           </ul>
 
         </div>
 
+
         <div class="card">
 
-          <h2>Authentic Japandi atmosphere</h2>
+          <h2>
+            Authentic Japandi atmosphere
+          </h2>
 
           <p>
-            Natural materials, warm lighting, soft textures and generous space create a calm atmosphere designed for rest, connection and recovery.
+            Natural materials, warm lighting, soft textures and generous
+            space create a calm atmosphere designed for rest, connection
+            and recovery.
           </p>
 
-          <div class="gallery" style="padding:0;margin-top:12px">
-            <div class="img"><img src="images/JL_LivingroomStudy.jpeg" alt=""></div>
-            <div class="img"><img src="images/JL_GardenSaunaEve.jpeg" alt=""></div>
+
+          <!-- Existing 2-photo gallery preserved -->
+
+          <div
+            class="gallery"
+            style="padding:0;margin-top:12px">
+
+            <div class="img">
+
+              <img
+                src="images/JL_LivingroomStudy.jpeg"
+                alt="Japandi Lounge living area">
+
+            </div>
+
+            <div class="img">
+
+              <img
+                src="images/JL_GardenSaunaEve.jpeg"
+                alt="Japandi Lounge garden sauna">
+
+            </div>
+
           </div>
 
         </div>
@@ -461,47 +907,80 @@
     </div>
   </section>
 
-  <!-- RETREATS SECTION -->
+
+  <!-- RETREATS -->
 
   <section class="section">
+
     <div class="container">
 
       <div class="split">
 
-        <div class="card">
+        <div class="card retreatCard">
 
-          <h2>Silent retreats at Japandi Lounge</h2>
+          <span class="retreatLabel">
+            Rest • Nature • Connection
+          </span>
+
+          <h2>
+            Retreats at Japandi Lounge
+          </h2>
+
 
           <p>
-            Escape noise, screens and constant stimulation through our small-scale silent retreats held in the Dutch countryside.
+            Escape the noise and reconnect in the peaceful countryside
+            surrounding Japandi Lounge.
           </p>
 
+
           <p>
-            A calm environment designed for deep rest, reflection, nervous system recovery and digital detox.
+            Our retreat experiences combine nature, stillness and
+            carefully selected activities including breathwork,
+            ice-bath sessions and sound healing.
           </p>
+
+
+          <p>
+            Whether you join one of our retreats or create your own by
+            adding our available activities to your stay, Japandi Lounge
+            offers a calm setting to slow down, reset and recharge.
+          </p>
+
 
           <div class="ctaRow">
 
-            <a class="btn primary" href="/silent-retreat.html">
-              View Silent Retreats
+            <a
+              class="btn primary"
+              href="/silent-retreat.html">
+              Retreats at Japandi Lounge
             </a>
+
 
             <a
               class="btn"
               href="https://wa.me/31615230319"
               target="_blank"
               rel="noopener">
-              Request Private Retreat
+              Ask About Retreat Activities
             </a>
 
           </div>
 
         </div>
 
+
         <div class="card">
 
-          <div class="img" style="aspect-ratio:16/10">
-            <img src="images/JL_GardenFire.jpeg" alt="">
+          <!-- Existing single image preserved -->
+
+          <div
+            class="img"
+            style="aspect-ratio:16/10">
+
+            <img
+              src="images/JL_GardenFire.jpeg"
+              alt="Japandi Lounge countryside retreat setting">
+
           </div>
 
         </div>
@@ -511,21 +990,29 @@
     </div>
   </section>
 
+
   <!-- LOCATION -->
 
-  <section id="location" class="section">
+  <section
+    id="location"
+    class="section">
+
     <div class="container">
 
       <div class="card">
 
-        <h2>Location</h2>
+        <h2>
+          Location
+        </h2>
 
         <p>
-          Japandi Lounge is located in the countryside near ’s-Hertogenbosch (Den Bosch), North Brabant.
+          Japandi Lounge is located in the countryside near
+          ’s-Hertogenbosch (Den Bosch), North Brabant.
         </p>
 
         <p>
-          Easy access, peaceful surroundings and enough space to truly slow down.
+          Easy access, peaceful surroundings and enough space to truly
+          slow down.
         </p>
 
       </div>
@@ -534,6 +1021,7 @@
   </section>
 
 </main>
+
 
 <footer class="footer">
 
@@ -558,8 +1046,10 @@
 
 </footer>
 
+
 <script>
-  document.getElementById("y").textContent = new Date().getFullYear();
+  document.getElementById("y").textContent =
+    new Date().getFullYear();
 </script>
 
 </body>
