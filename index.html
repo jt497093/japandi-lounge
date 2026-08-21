@@ -489,6 +489,72 @@
     }
 
 
+
+    /* EXPERIENCE CARDS */
+
+    .sectionIntro {
+      max-width: 760px;
+      margin-bottom: 22px;
+    }
+
+    .sectionLabel {
+      display: block;
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .sectionIntro h2 {
+      margin: 0 0 12px;
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 400;
+      line-height: 1.15;
+      letter-spacing: 1.2px;
+    }
+
+    .sectionIntro p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 700px;
+    }
+
+    .experienceGrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .experience {
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .experience h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.8px;
+    }
+
+    .number {
+      display: block;
+      margin-bottom: 28px;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 768px) {
+      .experienceGrid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
     /* RETREAT BLOCK */
 
     .retreatCard {
@@ -507,6 +573,30 @@
       text-transform: uppercase;
 
       letter-spacing: 3px;
+    }
+
+
+
+    /* LOCATION MAP */
+
+    .mapWrap {
+      margin-top: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--accent-soft);
+      aspect-ratio: 16 / 7;
+    }
+
+    .mapWrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .mapLink {
+      margin-top: 14px;
     }
 
 
@@ -610,6 +700,10 @@
 
       .videoSubtitle {
         font-size: 15px;
+      }
+
+      .mapWrap {
+        aspect-ratio: 4 / 3;
       }
     }
 
@@ -904,6 +998,132 @@
 
 
 
+
+  <!-- EXPERIENCES -->
+
+  <section
+    id="experiences"
+    class="section">
+
+    <div class="container">
+
+      <div class="sectionIntro">
+
+        <span class="sectionLabel">
+          Experiences
+        </span>
+
+        <h2>
+          Add experiences to your stay
+        </h2>
+
+        <p>
+          Build a retreat around the experiences that fit your group.
+          Activities can be combined with your stay to create a slower,
+          more intentional few days at Japandi Lounge.
+        </p>
+
+      </div>
+
+      <div class="experienceGrid">
+
+        <div class="card experience">
+          <div>
+            <span class="number">01</span>
+
+            <h3>
+              Breathwork
+            </h3>
+
+            <p>
+              Step away from distraction and create space for focused breathing,
+              calm and connection.
+            </p>
+          </div>
+        </div>
+
+        <div class="card experience">
+          <div>
+            <span class="number">02</span>
+
+            <h3>
+              Ice-bath sessions
+            </h3>
+
+            <p>
+              Combine cold exposure with the peaceful outdoor setting of
+              Japandi Lounge for an energising retreat experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="card experience">
+          <div>
+            <span class="number">03</span>
+
+            <h3>
+              Sound healing
+            </h3>
+
+            <p>
+              Slow the pace and settle into a quieter atmosphere with
+              sound-based relaxation sessions.
+            </p>
+          </div>
+        </div>
+
+        <div class="card experience">
+          <div>
+            <span class="number">04</span>
+
+            <h3>
+              Pilates
+            </h3>
+
+            <p>
+              Move with intention through guided Pilates sessions designed
+              to build strength, mobility and body awareness.
+            </p>
+          </div>
+        </div>
+
+        <div class="card experience">
+          <div>
+            <span class="number">05</span>
+
+            <h3>
+              BBQ / Pizza workshops
+            </h3>
+
+            <p>
+              Cook, share and connect around the fire with relaxed BBQ
+              or wood-fired pizza workshops for your group.
+            </p>
+          </div>
+        </div>
+
+        <div class="card experience">
+          <div>
+            <span class="number">06</span>
+
+            <h3>
+              More
+            </h3>
+
+            <p>
+              Looking for something different? We can help create additional
+              experiences tailored to your group and retreat.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
   <!-- RETREATS -->
 
   <section class="section">
@@ -999,10 +1219,29 @@
         </h2>
 
         <p>
-          Japandi Lounge is located in the countryside in Berlicum near
-          ’s-Hertogenbosch (Den Bosch), North Brabant. Easy access, peaceful 
+          Japandi Lounge is located at Woud 13 in Berlicum, near
+          ’s-Hertogenbosch (Den Bosch), North Brabant. Easy access, peaceful
           surroundings and enough space to truly slow down.
         </p>
+
+        <div class="mapWrap">
+          <iframe
+            src="https://www.google.com/maps?q=Woud%2013%2C%20Berlicum%2C%20Netherlands&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Google Maps location of Japandi Lounge, Woud 13, Berlicum">
+          </iframe>
+        </div>
+
+        <div class="mapLink">
+          <a
+            class="btn"
+            href="https://www.google.com/maps/search/?api=1&query=Woud%2013%2C%20Berlicum%2C%20Netherlands"
+            target="_blank"
+            rel="noopener">
+            Open in Google Maps
+          </a>
+        </div>
 
       </div>
 
