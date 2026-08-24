@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TCPSZSL94Z"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -12,11 +13,11 @@
     gtag('config', 'G-TCPSZSL94Z');
   </script>
 
-  <title>Retreats at Japandi Lounge | Nature, Breathwork, Ice Baths & Sound Healing</title>
+  <title>Retreats at Japandi Lounge | Recovery Retreats near Den Bosch</title>
 
   <meta
     name="description"
-    content="Retreats at Japandi Lounge near Den Bosch. Slow down in nature with breathwork, ice-bath sessions, sound healing, sauna, hot tub and a calm Japandi setting."
+    content="Small-group recovery retreats at Japandi Lounge near Den Bosch with breathwork, ice baths, sound healing, sauna, hot tub and peaceful countryside surroundings."
   >
 
   <meta name="robots" content="index, follow">
@@ -25,7 +26,7 @@
   <meta property="og:title" content="Retreats at Japandi Lounge">
   <meta
     property="og:description"
-    content="A calm countryside retreat setting near Den Bosch with breathwork, ice baths, sound healing, sauna, hot tub and space to reconnect."
+    content="Small-group retreats in the countryside near Den Bosch focused on rest, recovery, breathwork, cold exposure, sound healing and connection."
   >
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://japandilounge.com/retreats.html">
@@ -46,17 +47,27 @@
       --max: 1100px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
-    html, body {
+    html,
+    body {
       margin: 0;
       padding: 0;
     }
 
     body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family:
+        "Helvetica Neue",
+        Helvetica,
+        Arial,
+        sans-serif;
+
       color: var(--text);
       background: var(--bg-soft);
       line-height: 1.6;
@@ -67,12 +78,15 @@
       text-decoration: none;
     }
 
-    a:hover { opacity: 0.82; }
+    a:hover {
+      opacity: 0.82;
+    }
 
     .container {
       width: min(var(--max), calc(100% - 36px));
       margin: 0 auto;
     }
+
 
     /* NAVIGATION */
 
@@ -80,8 +94,11 @@
       position: sticky;
       top: 0;
       z-index: 30;
+
       backdrop-filter: blur(14px);
+
       background: rgba(245, 236, 223, 0.92);
+
       border-bottom: 1px solid var(--line);
     }
 
@@ -89,15 +106,19 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       min-height: 72px;
+
       gap: 20px;
     }
 
     .brand {
       font-size: 17px;
       font-weight: 500;
+
       text-transform: uppercase;
       letter-spacing: 4px;
+
       white-space: nowrap;
     }
 
@@ -105,104 +126,145 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      gap: 5px;
+
+      gap: 8px;
       flex-wrap: wrap;
     }
 
     .navlinks a {
       padding: 9px 11px;
       border-radius: 10px;
+
       color: var(--muted);
+
       font-size: 13px;
       letter-spacing: 0.3px;
     }
 
-    .navlinks a:hover { color: var(--text); }
-
-    .navlinks a.active {
+    .navlinks a:hover {
       color: var(--text);
-      background: rgba(248, 241, 232, 0.95);
     }
 
     .navlinks a.cta {
       background: var(--accent);
       color: #fff;
+
       padding-left: 16px;
       padding-right: 16px;
     }
 
-    /* HERO */
 
-    .hero {
-      padding: 28px 0 18px;
-    }
+    /* PAGE INTRO */
 
-    .heroVisual {
-      position: relative;
-      min-height: 620px;
-      overflow: hidden;
-      border-radius: 24px;
-      box-shadow: var(--shadow);
-      background: #222;
-    }
+    .pageIntro {
+      padding: 46px 0 22px;
 
-    .heroVisual img {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .heroShade {
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(
-          to top,
-          rgba(10,10,10,.68) 0%,
-          rgba(10,10,10,.25) 48%,
-          rgba(10,10,10,.06) 100%
-        );
-    }
-
-    .heroContent {
-      position: absolute;
-      left: 44px;
-      right: 44px;
-      bottom: 44px;
-      max-width: 760px;
-      color: #fff;
+      text-align: center;
     }
 
     .eyebrow {
+      display: block;
+
       margin-bottom: 10px;
-      font-size: 12px;
+
+      color: var(--muted);
+
+      font-size: 11px;
       letter-spacing: 4px;
+
       text-transform: uppercase;
     }
 
-    .heroTitle {
+    .pageTitle {
       margin: 0;
-      font-size: clamp(42px, 7vw, 78px);
-      line-height: 1;
+
       font-weight: 400;
-      letter-spacing: 5px;
+
+      font-size: clamp(38px, 6vw, 64px);
+
+      line-height: 1.05;
+
+      letter-spacing: 6px;
+
       text-transform: uppercase;
     }
 
-    .heroLead {
-      max-width: 640px;
-      margin: 18px 0 0;
-      font-size: 18px;
+    .pageLead {
+      max-width: 680px;
+
+      margin: 18px auto 0;
+
+      color: var(--muted);
+
+      font-size: 17px;
       line-height: 1.55;
     }
+
+
+    /* VIDEO */
+
+    .videoSection {
+      padding: 12px 0 30px;
+    }
+
+    .videoCard {
+      border: 1px solid var(--line);
+
+      background: var(--card);
+
+      border-radius: 24px;
+
+      box-shadow: var(--shadow);
+
+      overflow: hidden;
+    }
+
+    .videoWrap {
+      position: relative;
+
+      width: 100%;
+
+      aspect-ratio: 16 / 9;
+
+      background: #151515;
+    }
+
+    .videoWrap video,
+    .videoWrap iframe {
+      width: 100%;
+      height: 100%;
+
+      border: 0;
+
+      display: block;
+
+      object-fit: cover;
+    }
+
+    .videoNote {
+      padding: 16px 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 16px;
+
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+    .videoNote strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+
 
     /* GENERAL */
 
     .section {
-      padding: 34px 0;
+      padding: 30px 0;
     }
 
     .sectionIntro {
@@ -212,63 +274,134 @@
 
     .sectionLabel {
       display: block;
+
       margin-bottom: 8px;
+
       color: var(--muted);
+
       font-size: 11px;
-      letter-spacing: 3px;
+
       text-transform: uppercase;
+
+      letter-spacing: 3px;
     }
 
     h2 {
       margin: 0 0 14px;
+
       font-size: clamp(28px, 4vw, 42px);
+
       line-height: 1.15;
+
       font-weight: 400;
+
       letter-spacing: 1.5px;
     }
 
     h3 {
       margin: 0 0 8px;
+
       font-size: 21px;
+
       font-weight: 500;
     }
 
     p {
       margin: 0 0 14px;
-      color: var(--muted);
-    }
 
-    .split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      align-items: start;
+      color: var(--muted);
     }
 
     .card {
       border: 1px solid var(--line);
-      background: rgba(248, 241, 232, 0.84);
+
+      background: rgba(248, 241, 232, 0.82);
+
       border-radius: var(--radius);
+
       box-shadow: var(--shadow);
+
       padding: 28px;
     }
 
-    .darkCard {
-      background: var(--accent);
-      color: #fff;
-      border-color: var(--accent);
+
+    /* UPCOMING RETREATS */
+
+    .datesCard {
+      padding: 0;
+      overflow: hidden;
     }
 
-    .darkCard p {
-      color: rgba(255,255,255,.76);
+    .retreatRow {
+      display: grid;
+
+      grid-template-columns:
+        1.2fr
+        2fr
+        .8fr
+        1fr;
+
+      gap: 18px;
+
+      align-items: center;
+
+      padding: 22px 24px;
+
+      border-bottom: 1px solid var(--line);
     }
+
+    .retreatRow:last-child {
+      border-bottom: 0;
+    }
+
+    .retreatRow:hover {
+      background: rgba(223, 198, 168, 0.14);
+    }
+
+    .date {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .retreatName {
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .retreatMeta {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .availability {
+      display: inline-flex;
+
+      width: fit-content;
+
+      padding: 6px 10px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 999px;
+
+      background: rgba(223, 198, 168, 0.28);
+
+      color: var(--text);
+
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
 
     /* BUTTONS */
 
     .ctaRow {
       display: flex;
+
       gap: 10px;
+
       flex-wrap: wrap;
+
       margin-top: 24px;
     }
 
@@ -276,106 +409,135 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
+
       min-height: 45px;
+
       padding: 11px 16px;
+
       border: 1px solid var(--line);
+
       border-radius: 10px;
+
       background: transparent;
+
       font-size: 13px;
       font-weight: 500;
-      letter-spacing: .2px;
-      transition: transform .2s ease, opacity .2s ease;
+
+      letter-spacing: 0.2px;
+
+      transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
     }
 
-    .btn:hover { transform: translateY(-1px); }
+    .btn:hover {
+      transform: translateY(-1px);
+    }
 
     .btn.primary {
       background: var(--accent);
+
       border-color: var(--accent);
+
       color: #fff;
     }
 
-    .darkCard .btn.primary,
-    .heroContent .btn.primary {
-      background: #fff;
-      border-color: #fff;
-      color: var(--text);
-    }
 
-    .heroContent .btn {
-      border-color: rgba(255,255,255,.55);
-      color: #fff;
-    }
+    /* INTRO / CONTENT */
 
-    /* EXPERIENCE CARDS */
-
-    .experienceGrid {
+    .split {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+
+      grid-template-columns: 1fr 1fr;
+
       gap: 18px;
-    }
 
-    .experience {
-      min-height: 220px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      align-items: start;
     }
-
-    .number {
-      display: block;
-      margin-bottom: 28px;
-      color: var(--muted);
-      font-size: 12px;
-      letter-spacing: 2px;
-    }
-
-    /* GALLERY */
 
     .gallery {
       display: grid;
+
       grid-template-columns: 1fr 1fr;
+
       gap: 10px;
     }
 
     .img {
       overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      background: var(--accent-soft);
-      aspect-ratio: 4 / 3;
-    }
 
-    .img.wide {
-      aspect-ratio: 16 / 10;
+      border: 1px solid var(--line);
+
+      border-radius: 14px;
+
+      background: var(--accent-soft);
+
+      aspect-ratio: 4 / 3;
     }
 
     .img img {
       width: 100%;
       height: 100%;
+
       display: block;
+
       object-fit: cover;
     }
 
-    /* LIST */
+
+    /* EXPERIENCE CARDS */
+
+    .experienceGrid {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 18px;
+    }
+
+    .experience {
+      min-height: 205px;
+    }
+
+    .number {
+      display: block;
+
+      margin-bottom: 26px;
+
+      color: var(--muted);
+
+      font-size: 12px;
+
+      letter-spacing: 2px;
+    }
+
+
+    /* LOCATION / STAY */
 
     .list {
       margin: 12px 0 0;
+
       padding-left: 20px;
+
       color: var(--muted);
     }
 
-    .list li { margin: 8px 0; }
+    .list li {
+      margin: 8px 0;
+    }
+
 
     /* FINAL CTA */
 
     .finalCta {
-      padding: 38px;
       text-align: center;
+
+      padding: 38px;
     }
 
     .finalCta p {
       max-width: 660px;
+
       margin-left: auto;
       margin-right: auto;
     }
@@ -384,36 +546,56 @@
       justify-content: center;
     }
 
+
     /* FOOTER */
 
     .footer {
       padding: 34px 0 40px;
+
       margin-top: 25px;
+
       border-top: 1px solid var(--line);
+
       color: var(--muted);
+
       font-size: 13px;
     }
 
     .footerInner {
       display: flex;
+
       gap: 10px;
+
       flex-wrap: wrap;
+
       align-items: center;
       justify-content: space-between;
     }
 
+
+    /* TABLET */
+
     @media (max-width: 960px) {
+
       .split,
       .experienceGrid {
         grid-template-columns: 1fr;
       }
 
-      .heroVisual {
-        min-height: 560px;
+      .retreatRow {
+        grid-template-columns: 1fr 1.6fr 1fr;
+      }
+
+      .retreatRow .duration {
+        display: none;
       }
     }
 
+
+    /* MOBILE */
+
     @media (max-width: 720px) {
+
       .container {
         width: min(var(--max), calc(100% - 24px));
       }
@@ -421,6 +603,7 @@
       .nav {
         align-items: flex-start;
         flex-direction: column;
+
         padding: 15px 0;
       }
 
@@ -429,30 +612,50 @@
       }
 
       .navlinks {
-        justify-content: flex-start;
+        width: 100%;
+        justify-content: space-between;
       }
 
-      .hero {
-        padding-top: 16px;
+      .pageIntro {
+        padding-top: 34px;
       }
 
-      .heroVisual {
-        min-height: 620px;
-        border-radius: 17px;
-      }
-
-      .heroContent {
-        left: 22px;
-        right: 22px;
-        bottom: 24px;
-      }
-
-      .heroTitle {
+      .pageTitle {
+        font-size: 38px;
         letter-spacing: 3px;
       }
 
-      .heroLead {
-        font-size: 16px;
+      .pageLead {
+        font-size: 15px;
+      }
+
+      .videoCard {
+        border-radius: 17px;
+      }
+
+      .videoNote {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .datesCard {
+        padding: 0;
+      }
+
+      .retreatRow {
+        grid-template-columns: 1fr;
+
+        gap: 7px;
+
+        padding: 20px;
+      }
+
+      .retreatRow .duration {
+        display: block;
+      }
+
+      .availability {
+        margin-top: 3px;
       }
 
       .card,
@@ -464,13 +667,18 @@
         grid-template-columns: 1fr;
       }
     }
+
   </style>
 </head>
 
+
 <body>
 
+
 <header class="topbar">
+
   <div class="container">
+
     <nav class="nav">
 
       <a class="brand" href="/">
@@ -478,71 +686,102 @@
       </a>
 
       <div class="navlinks">
-        <a href="/">Home</a>
-        <a href="#experiences">Experiences</a>
-        <a href="#stay">The Stay</a>
-        <a href="/retreats.html" class="active">Retreats</a>
+
+        <a href="/">
+          Home
+        </a>
 
         <a
           href="https://wa.me/31615230319"
           target="_blank"
           rel="noopener"
           class="cta">
-          Ask About Retreats
+          Enquire
         </a>
+
       </div>
 
     </nav>
+
   </div>
+
 </header>
+
 
 <main>
 
-  <!-- HERO -->
 
-  <section class="hero">
+  <!-- INTRO -->
+
+  <section class="pageIntro">
+
     <div class="container">
 
-      <div class="heroVisual">
+      <span class="eyebrow">
+        Rest • Recovery • Connection
+      </span>
 
-        <img
-          src="images/JL_GardenFire.jpeg"
-          alt="Retreat setting at Japandi Lounge">
+      <h1 class="pageTitle">
+        Retreats at Japandi Lounge
+      </h1>
 
-        <div class="heroShade"></div>
+      <p class="pageLead">
+        Small-group retreats in the countryside near Den Bosch.
+        Step away from everyday noise and reset through rest,
+        breathwork, cold exposure, sound healing and time in nature.
+      </p>
 
-        <div class="heroContent">
+    </div>
 
-          <div class="eyebrow">
-            Rest • Nature • Connection
+  </section>
+
+
+  <!-- FULL RETREAT VIDEO -->
+
+  <section class="videoSection">
+
+    <div class="container">
+
+      <div class="videoCard">
+
+        <div class="videoWrap">
+
+          <!--
+            OPTION A: DIRECT MP4 VIDEO
+            Replace FULL_VIDEO_URL_HERE with a direct .mp4 URL
+            or a local path if you later host the video yourself.
+          -->
+
+          <video
+            controls
+            preload="metadata"
+            poster="images/JL_GardenFire.jpeg">
+
+            <source
+              src="FULL_VIDEO_URL_HERE"
+              type="video/mp4">
+
+            Your browser does not support the video tag.
+
+          </video>
+
+          <!--
+            OPTION B: YOUTUBE / VIMEO
+            If you use YouTube or Vimeo, delete the <video> block above
+            and replace it with the iframe embed code from YouTube/Vimeo.
+          -->
+
+        </div>
+
+        <div class="videoNote">
+
+          <div>
+            <strong>Watch the full retreat film</strong><br>
+            Get a feel for the setting, atmosphere and experience.
           </div>
 
-          <h1 class="heroTitle">
-            Retreats at Japandi Lounge
-          </h1>
-
-          <p class="heroLead">
-            A peaceful countryside setting near Den Bosch where you can
-            slow down, step away from everyday noise and reconnect through
-            nature, breathwork, ice-bath sessions, sound healing and time together.
-          </p>
-
-          <div class="ctaRow">
-
-            <a
-              class="btn primary"
-              href="https://wa.me/31615230319"
-              target="_blank"
-              rel="noopener">
-              Ask About Retreats
-            </a>
-
-            <a
-              class="btn"
-              href="#create">
-              Create Your Own Retreat
-            </a>
-
+          <div>
+            Full film
           </div>
 
         </div>
@@ -550,11 +789,125 @@
       </div>
 
     </div>
+
   </section>
 
-  <!-- INTRO -->
+
+  <!-- UPCOMING RETREATS -->
+
+  <section
+    id="dates"
+    class="section">
+
+    <div class="container">
+
+      <div class="sectionIntro">
+
+        <span class="sectionLabel">
+          Upcoming retreats
+        </span>
+
+        <h2>
+          Upcoming dates
+        </h2>
+
+        <p>
+          Small groups, space to recover and enough time to properly
+          step away from everyday routines.
+        </p>
+
+      </div>
+
+
+      <div class="card datesCard">
+
+
+        <!-- RETREAT 1 -->
+
+        <div class="retreatRow">
+
+          <div class="date">
+            11–13 Dec 2026
+          </div>
+
+          <div class="retreatName">
+            Intensive Recovery Retreat
+          </div>
+
+          <div class="retreatMeta duration">
+            3 days
+          </div>
+
+          <div>
+            <span class="availability">
+              9 spots available
+            </span>
+          </div>
+
+        </div>
+
+
+        <!-- RETREAT 2 -->
+
+        <div class="retreatRow">
+
+          <div class="date">
+            TBC
+          </div>
+
+          <div class="retreatName">
+            Intensive Recovery Retreat
+          </div>
+
+          <div class="retreatMeta duration">
+            3 days
+          </div>
+
+          <div>
+            <span class="availability">
+              9 spots available
+            </span>
+          </div>
+
+        </div>
+
+
+        <!-- RETREAT 3 -->
+
+        <div class="retreatRow">
+
+          <div class="date">
+            TBC
+          </div>
+
+          <div class="retreatName">
+            5 Day Silent Retreat
+          </div>
+
+          <div class="retreatMeta duration">
+            5 days
+          </div>
+
+          <div>
+            <span class="availability">
+              9 spots available
+            </span>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHAT TO EXPECT -->
 
   <section class="section">
+
     <div class="container">
 
       <div class="split">
@@ -562,11 +915,11 @@
         <div class="card">
 
           <span class="sectionLabel">
-            A different pace
+            What to expect
           </span>
 
           <h2>
-            Space to slow down
+            Space to properly recover
           </h2>
 
           <p>
@@ -576,17 +929,17 @@
 
           <p>
             The house combines Japanese minimalism with Scandinavian warmth,
-            creating an atmosphere designed for rest, reflection and meaningful
+            creating a calm environment for rest, reflection and meaningful
             time together.
           </p>
 
           <p>
-            Whether you join one of our retreats or create your own by adding
-            our available activities to your stay, Japandi Lounge offers a calm
-            setting to slow down, reset and recharge.
+            The aim is simple: create enough distance from daily routines
+            to slow down, recover and return with more energy and clarity.
           </p>
 
         </div>
+
 
         <div class="gallery">
 
@@ -599,7 +952,7 @@
           <div class="img">
             <img
               src="images/JL_LivingroomStudy.jpeg"
-              alt="Calm Japandi interior">
+              alt="Calm Japandi Lounge interior">
           </div>
 
         </div>
@@ -607,151 +960,101 @@
       </div>
 
     </div>
+
   </section>
+
 
   <!-- EXPERIENCES -->
 
-  <section
-    id="experiences"
-    class="section">
+  <section class="section">
 
     <div class="container">
 
       <div class="sectionIntro">
 
         <span class="sectionLabel">
-          Experiences
+          The programme
         </span>
 
         <h2>
-          Add experiences to your stay
+          Experiences built around recovery
         </h2>
 
         <p>
-          Build a retreat around the experiences that fit your group.
-          Activities can be combined with your stay to create a slower,
-          more intentional few days at Japandi Lounge.
+          Retreat programmes can combine guided sessions with quiet time,
+          shared meals and use of the house and wellness facilities.
         </p>
 
       </div>
 
+
       <div class="experienceGrid">
 
-        <div class="card experience">
-          <div>
-            <span class="number">01</span>
-
-            <h3>
-              Breathwork
-            </h3>
-
-            <p>
-              Step away from distraction and create space for focused breathing,
-              calm and connection.
-            </p>
-          </div>
-        </div>
 
         <div class="card experience">
-          <div>
-            <span class="number">02</span>
 
-            <h3>
-              Ice-bath sessions
-            </h3>
-
-            <p>
-              Combine cold exposure with the peaceful outdoor setting of
-              Japandi Lounge for an energising retreat experience.
-            </p>
-          </div>
-        </div>
-
-        <div class="card experience">
-          <div>
-            <span class="number">03</span>
-
-            <h3>
-              Sound healing
-            </h3>
-
-            <p>
-              Slow the pace and settle into a quieter atmosphere with
-              sound-based relaxation sessions.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CREATE YOUR OWN -->
-
-  <section
-    id="create"
-    class="section">
-
-    <div class="container">
-
-      <div class="split">
-
-        <div class="card darkCard">
-
-          <span class="sectionLabel" style="color:rgba(255,255,255,.62)">
-            Flexible retreats
+          <span class="number">
+            01
           </span>
 
-          <h2>
-            Create your own retreat
-          </h2>
+          <h3>
+            Breathwork
+          </h3>
 
           <p>
-            You do not have to join a fixed retreat programme to experience
-            Japandi Lounge as a retreat destination.
+            Focused breathing sessions designed to create space,
+            settle the mind and reconnect with the body.
           </p>
-
-          <p>
-            Book the house for your group and add available activities such
-            as breathwork, ice-bath sessions or sound healing to your stay.
-          </p>
-
-          <p>
-            This gives you the freedom to create your own pace, structure
-            and combination of experiences.
-          </p>
-
-          <div class="ctaRow">
-
-            <a
-              class="btn primary"
-              href="https://wa.me/31615230319"
-              target="_blank"
-              rel="noopener">
-              Build Your Retreat
-            </a>
-
-          </div>
 
         </div>
 
-        <div class="img wide">
-          <img
-            src="images/JL_GardenFire.jpeg"
-            alt="Evening fire at Japandi Lounge">
+
+        <div class="card experience">
+
+          <span class="number">
+            02
+          </span>
+
+          <h3>
+            Ice-bath sessions
+          </h3>
+
+          <p>
+            Guided cold exposure in the peaceful outdoor setting
+            of Japandi Lounge.
+          </p>
+
         </div>
+
+
+        <div class="card experience">
+
+          <span class="number">
+            03
+          </span>
+
+          <h3>
+            Sound healing
+          </h3>
+
+          <p>
+            Slow down and settle into a quieter state with
+            sound-based relaxation sessions.
+          </p>
+
+        </div>
+
 
       </div>
 
     </div>
+
   </section>
 
-  <!-- THE STAY -->
 
-  <section
-    id="stay"
-    class="section">
+  <!-- THE LOCATION / ACCOMMODATION -->
+
+  <section class="section">
 
     <div class="container">
 
@@ -760,17 +1063,17 @@
         <div class="card">
 
           <span class="sectionLabel">
-            The setting
+            The stay
           </span>
 
           <h2>
-            More than the sessions
+            Retreat in comfort
           </h2>
 
           <p>
-            The retreat experience continues between activities. Japandi Lounge
-            offers indoor and outdoor spaces designed for slowing down and
-            spending time together.
+            The retreat experience continues between sessions.
+            Japandi Lounge offers indoor and outdoor spaces designed
+            for slowing down, recovery and connection.
           </p>
 
           <ul class="list">
@@ -784,6 +1087,7 @@
           </ul>
 
         </div>
+
 
         <div class="gallery">
 
@@ -816,11 +1120,14 @@
       </div>
 
     </div>
+
   </section>
+
 
   <!-- FINAL CTA -->
 
   <section class="section">
+
     <div class="container">
 
       <div class="card finalCta">
@@ -834,8 +1141,8 @@
         </h2>
 
         <p>
-          Tell us what you have in mind and we can discuss the stay,
-          the available retreat activities and what would suit your group.
+          Questions about a retreat, availability or whether a particular
+          weekend is right for you? Contact us directly.
         </p>
 
         <div class="ctaRow">
@@ -845,13 +1152,13 @@
             href="https://wa.me/31615230319"
             target="_blank"
             rel="noopener">
-            Start a WhatsApp Conversation
+            WhatsApp Japandi Lounge
           </a>
 
           <a
             class="btn"
             href="/">
-            Back to Japandi Lounge
+            Home
           </a>
 
         </div>
@@ -859,9 +1166,12 @@
       </div>
 
     </div>
+
   </section>
 
+
 </main>
+
 
 <footer class="footer">
 
@@ -890,10 +1200,12 @@
 
 </footer>
 
+
 <script>
   document.getElementById("y").textContent =
     new Date().getFullYear();
 </script>
+
 
 </body>
 </html>
