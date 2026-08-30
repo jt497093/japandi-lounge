@@ -612,6 +612,58 @@
 
 
 
+    /* FAQ */
+
+    .faqList {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      align-items: start;
+    }
+
+    .faqItem {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(248, 241, 232, 0.82);
+      overflow: hidden;
+    }
+
+    .faqItem summary {
+      position: relative;
+      cursor: pointer;
+      list-style: none;
+      padding: 18px 52px 18px 20px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .faqItem summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faqItem summary::after {
+      content: "+";
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      font-size: 22px;
+      font-weight: 300;
+    }
+
+    .faqItem[open] summary::after {
+      content: "−";
+    }
+
+    .faqItem p {
+      margin: 0;
+      padding: 0 20px 18px;
+      color: var(--muted);
+    }
+
+
     /* LOCATION MAP */
 
     .mapWrap {
@@ -738,6 +790,10 @@
 
     @media (max-width: 720px) {
 
+      .faqList {
+        grid-template-columns: 1fr;
+      }
+
       .nav {
         align-items: flex-start;
         flex-direction: column;
@@ -804,16 +860,24 @@
           Facilities
         </a>
 
-        <a href="/availability/">
-          Availability
+        <a href="#experiences">
+          Experiences
+        </a>
+
+        <a href="/photos/">
+          Photos
+        </a>
+
+        <a href="#faq">
+          FAQ
         </a>
 
         <a href="/retreats/">
           Retreats
         </a>
 
-        <a href="#location">
-          Location
+        <a href="/availability/">
+          Availability
         </a>
 
         <a
@@ -1200,87 +1264,183 @@
 
 
 
-  <!-- RETREATS -->
+  <!-- ACTIVITIES VIDEO -->
 
   <section class="section">
 
     <div class="container">
 
-      <div class="split">
+      <div class="card">
+
+        <div
+          class="img"
+          style="aspect-ratio:16/10">
+
+          <video
+            autoplay
+            muted
+            loop
+            playsinline>
+
+            <source
+              src="videos/Activities.mp4"
+              type="video/mp4">
+
+            Your browser does not support the video tag.
+
+          </video>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
 
 
-        <div class="card retreatCard">
 
-          <span class="retreatLabel">
-            Rest • Nature • Connection
-          </span>
+  <!-- JAPANDI RETREATS -->
 
+  <section class="section">
 
-          <h2>
+    <div class="container">
+
+      <div class="card retreatCard">
+
+        <span class="retreatLabel">
+          Rest • Nature • Connection
+        </span>
+
+        <h2>
+          Japandi Retreats
+        </h2>
+
+        <p>
+          Our retreat experiences combine nature, stillness and
+          carefully selected activities including breathwork,
+          ice-bath sessions and sound healing.
+        </p>
+
+        <p>
+          Whether you join one of our retreats or create your own by
+          adding our available activities to your stay, Japandi Lounge
+          offers a calm setting to slow down, reset and recharge.
+        </p>
+
+        <div class="ctaRow">
+
+          <a
+            class="btn primary"
+            href="/retreats/">
             Retreats at Japandi Lounge
-          </h2>
+          </a>
 
-          <p>
-            Our retreat experiences combine nature, stillness and
-            carefully selected activities including breathwork,
-            ice-bath sessions and sound healing.
-          </p>
-
-
-          <p>
-            Whether you join one of our retreats or create your own by
-            adding our available activities to your stay, Japandi Lounge
-            offers a calm setting to slow down, reset and recharge.
-          </p>
-
-
-          <div class="ctaRow">
-
-            <a
-              class="btn primary"
-              href="/retreats/">
-              Retreats at Japandi Lounge
-            </a>
-
-
-            <a
-              class="btn"
-              href="https://wa.me/31615230319"
-              target="_blank"
-              rel="noopener">
-              Ask About Retreat Activities
-            </a>
-
-          </div>
+          <a
+            class="btn"
+            href="https://wa.me/31615230319"
+            target="_blank"
+            rel="noopener">
+            Ask About Retreat Activities
+          </a>
 
         </div>
 
+      </div>
+
+    </div>
+
+  </section>
 
 
-        <div class="card">
 
-          <div
-            class="img"
-            style="aspect-ratio:16/10">
+  <!-- FAQ -->
 
-            <video
-              autoplay
-              muted
-              loop
-              playsinline>
+  <section
+    id="faq"
+    class="section">
 
-              <source
-                src="videos/Activities.mp4"
-                type="video/mp4">
+    <div class="container">
 
-              Your browser does not support the video tag.
+      <div class="sectionIntro">
 
-            </video>
+        <h2>
+          Frequently Asked Questions
+        </h2>
 
-          </div>
+      </div>
 
-        </div>
+      <div class="faqList">
 
+        <details class="faqItem">
+          <summary>How many guests can stay at Japandi Lounge?</summary>
+          <p>Japandi Lounge is designed for group stays, family gatherings and retreats. The number of guests depends on the type of booking and sleeping arrangements. Contact us with your group size and we can confirm what is possible.</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>What facilities are included at Japandi Lounge?</summary>
+          <p>Guests have access to the house and its wellness and communal facilities, including a sauna, wood-fired hot tub, outdoor fire pit, wood-fired pizza oven, large communal kitchen, long dining table and indoor and outdoor lounge areas. Use of the facilities is included in the price, but we do sometimes ask our guests to pay for their wood, depending on how much they use and how long they stay.</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>Are bed linen, towels and bathrobes included?</summary>
+          <p>Yes. Bed linen and 1 towel per guest are provided as part of your stay. Beds are made up. Tip: Bring an extra towel, slippers and maybe a bathrobe if you're going to use our hot tub and sauna.</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>Is there a fully equipped kitchen and fridge?</summary>
+          <p>Yes. Japandi Lounge has a large communal kitchen designed for groups, shared meals and retreat catering. There are two large fridges and a freezer. There is also a 5-pit gas cooker, 5-pit induction plate, large oven, pizza oven and two BBQs at the property.</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>What is the minimum stay?</summary>
+          <p>Japandi Lounge generally works with a minimum stay of two nights. If you have specific dates in mind, contact us and we can confirm the options available. Tip: Ask us for a discount if you're staying longer 😊</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>How can I check availability?</summary>
+          <p>You can view our current availability on the Availability page. For the most up-to-date information, you can also contact us directly through WhatsApp.</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>How do I book Japandi Lounge?</summary>
+          <p>The easiest way to book is to contact us directly through WhatsApp. Send us your preferred dates, group size and the type of stay you are planning, and we will confirm availability and pricing.</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>Can I book directly?</summary>
+          <p>Yes. Direct bookings are possible. Contact us through WhatsApp to discuss your dates and group requirements.</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>Where is Japandi Lounge located?</summary>
+          <p>Japandi Lounge is located at Woud 13 in Berlicum, North Brabant, close to ’s-Hertogenbosch, also known as Den Bosch.</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>How far is Japandi Lounge from Den Bosch?</summary>
+          <p>Japandi Lounge is approximately 10 minutes from Den Bosch by car, while still offering a peaceful countryside setting.</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>Is there parking at the property?</summary>
+          <p>Yes, behind the house there is plenty of space for your cars and campers.</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>Are children welcome?</summary>
+          <p>Well-behaved children are more than welcome at Japandi Lounge. We have a trampoline, grass field and games in the house. For small children, we have baby chairs and a baby bed available. There is sheep fencing around our ponds and gates that can be closed around the playing field at the back of the house.</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>Are pets allowed?</summary>
+          <p>No. We do love animals, but unfortunately we have taken the decision not to allow pets. The main reasons are guest allergies and hygiene. Tip: We can help you find a pet sitter close to the house, though. Text us for more information.</p>
+        </details>
+
+        <details class="faqItem">
+          <summary>Are parties allowed?</summary>
+          <p>Japandi Lounge is designed for relaxed group stays and is not a party venue. We value our peaceful surroundings and our relationship with our neighbours. Loud music and parties are not permitted, and outdoor noise must be kept to a minimum after 22:30.</p>
+        </details>
 
       </div>
 
