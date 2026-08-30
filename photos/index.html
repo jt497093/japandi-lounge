@@ -24,7 +24,6 @@ gtag('config','G-TCPSZSL94Z');
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
 body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg-soft);line-height:1.6}
-body.lightbox-open{overflow:hidden}
 a{color:inherit;text-decoration:none}
 a:hover{opacity:.82}
 .container{width:min(var(--max),calc(100% - 36px));margin:0 auto}
@@ -44,17 +43,15 @@ a:hover{opacity:.82}
 .galleryGroup:last-child{margin-bottom:0}
 .groupHeading{margin-bottom:14px}
 .groupHeading h2{margin:0;font-size:clamp(23px,3vw,30px);font-weight:400;letter-spacing:1.2px}
-.galleryGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-flow:dense;grid-auto-rows:170px;gap:12px}
-.photo{appearance:none;padding:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--accent-soft);cursor:pointer;box-shadow:var(--shadow);min-width:0;min-height:0;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.galleryGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.photo{appearance:none;padding:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--accent-soft);cursor:pointer;box-shadow:var(--shadow);aspect-ratio:4/3;min-width:0;min-height:0;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
 .photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .28s ease}
-.photo.feature-wide{grid-column:span 2;grid-row:span 2}
-.photo.feature-tall{grid-row:span 2}
 @media (hover:hover) and (pointer:fine){
 .photo:hover{transform:translateY(-2px);border-color:rgba(29,29,27,.24);box-shadow:0 20px 48px rgba(40,30,20,.11)}
 .photo:hover img{transform:scale(1.025)}
 }
 @media(max-width:960px){
-.galleryGrid{grid-template-columns:repeat(3,minmax(0,1fr));grid-auto-rows:155px}
+.galleryGrid{grid-template-columns:repeat(3,minmax(0,1fr))}
 }
 @media(max-width:720px){
 .container{width:min(var(--max),calc(100% - 24px))}
@@ -63,12 +60,12 @@ a:hover{opacity:.82}
 .navlinks{justify-content:flex-start}
 .pageHeader{padding-top:34px}
 .pageTitle{font-size:38px;letter-spacing:3px}
-.galleryGrid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:145px;gap:9px}
+.galleryGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
 .lightbox{padding:14px}
-.lightboxImage{max-width:94vw;max-height:82vh}
+.lightboxImage{max-width:88vw;max-height:72vh}
 .lightboxPrev{left:10px}.lightboxNext{right:10px}
 }
-@media(max-width:440px){.galleryGrid{grid-template-columns:1fr;grid-auto-rows:220px}.photo.feature-wide,.photo.feature-tall{grid-column:span 1;grid-row:span 1}}
+@media(max-width:440px){.galleryGrid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.photo,.photo img{transition:none}}
 </style>
 </head>
@@ -111,7 +108,7 @@ a:hover{opacity:.82}
           <button class="photo" type="button" data-index="1" aria-label="Open Hallway 1 at Japandi Lounge">
             <img src="/images/gallery/gang1.webp" alt="Hallway 1 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
-          <button class="photo feature-wide" type="button" data-index="2" aria-label="Open Living room 14 at Japandi Lounge">
+          <button class="photo" type="button" data-index="2" aria-label="Open Living room 14 at Japandi Lounge">
             <img src="/images/gallery/huiskamer14.webp" alt="Living room 14 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
           <button class="photo" type="button" data-index="3" aria-label="Open Living room 3 at Japandi Lounge">
@@ -120,7 +117,7 @@ a:hover{opacity:.82}
           <button class="photo" type="button" data-index="4" aria-label="Open Living room 4 at Japandi Lounge">
             <img src="/images/gallery/huiskamer4.webp" alt="Living room 4 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
-          <button class="photo feature-tall" type="button" data-index="5" aria-label="Open Living room 8 at Japandi Lounge">
+          <button class="photo" type="button" data-index="5" aria-label="Open Living room 8 at Japandi Lounge">
             <img src="/images/gallery/huiskamer8.webp" alt="Living room 8 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
           <button class="photo" type="button" data-index="6" aria-label="Open Living room 9 at Japandi Lounge">
@@ -138,7 +135,7 @@ a:hover{opacity:.82}
           <button class="photo" type="button" data-index="10" aria-label="Open Conservatory 4 at Japandi Lounge">
             <img src="/images/gallery/serre4.webp" alt="Conservatory 4 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
-          <button class="photo feature-wide" type="button" data-index="11" aria-label="Open Conservatory 5 at Japandi Lounge">
+          <button class="photo" type="button" data-index="11" aria-label="Open Conservatory 5 at Japandi Lounge">
             <img src="/images/gallery/serre5.webp" alt="Conservatory 5 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
         </div>
@@ -149,7 +146,7 @@ a:hover{opacity:.82}
           <h2 id="kitchen-dining">Kitchen & dining</h2>
         </div>
         <div class="galleryGrid">
-          <button class="photo feature-wide" type="button" data-index="12" aria-label="Open Dining area at Japandi Lounge">
+          <button class="photo" type="button" data-index="12" aria-label="Open Dining area at Japandi Lounge">
             <img src="/images/gallery/eethoek.webp" alt="Dining area at Japandi Lounge" loading="lazy" decoding="async">
           </button>
           <button class="photo" type="button" data-index="13" aria-label="Open Dining area 2 at Japandi Lounge">
@@ -167,7 +164,7 @@ a:hover{opacity:.82}
           <button class="photo" type="button" data-index="17" aria-label="Open Kitchen 4 at Japandi Lounge">
             <img src="/images/gallery/keuken4.webp" alt="Kitchen 4 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
-          <button class="photo feature-wide" type="button" data-index="18" aria-label="Open Kitchen 5 at Japandi Lounge">
+          <button class="photo" type="button" data-index="18" aria-label="Open Kitchen 5 at Japandi Lounge">
             <img src="/images/gallery/keuken5.webp" alt="Kitchen 5 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
         </div>
@@ -184,7 +181,7 @@ a:hover{opacity:.82}
           <button class="photo" type="button" data-index="20" aria-label="Open Upper floor 3 at Japandi Lounge">
             <img src="/images/gallery/bovenverdieping3.webp" alt="Upper floor 3 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
-          <button class="photo feature-wide" type="button" data-index="21" aria-label="Open Bedroom 1 at Japandi Lounge">
+          <button class="photo" type="button" data-index="21" aria-label="Open Bedroom 1 at Japandi Lounge">
             <img src="/images/gallery/slaapkamer1.webp" alt="Bedroom 1 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
           <button class="photo" type="button" data-index="22" aria-label="Open Bedroom 1en2 at Japandi Lounge">
@@ -199,7 +196,7 @@ a:hover{opacity:.82}
           <button class="photo" type="button" data-index="25" aria-label="Open Bedroom 4 at Japandi Lounge">
             <img src="/images/gallery/slaapkamer4.webp" alt="Bedroom 4 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
-          <button class="photo feature-tall" type="button" data-index="26" aria-label="Open Bedroom 5 at Japandi Lounge">
+          <button class="photo" type="button" data-index="26" aria-label="Open Bedroom 5 at Japandi Lounge">
             <img src="/images/gallery/slaapkamer5.webp" alt="Bedroom 5 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
           <button class="photo" type="button" data-index="27" aria-label="Open Bedroom 6 at Japandi Lounge">
@@ -222,7 +219,7 @@ a:hover{opacity:.82}
           <h2 id="outside-wellness">Outside & wellness</h2>
         </div>
         <div class="galleryGrid">
-          <button class="photo feature-wide" type="button" data-index="31" aria-label="Open Covered outdoor lounge at Japandi Lounge">
+          <button class="photo" type="button" data-index="31" aria-label="Open Covered outdoor lounge at Japandi Lounge">
             <img src="/images/gallery/overkapping.webp" alt="Covered outdoor lounge at Japandi Lounge" loading="lazy" decoding="async">
           </button>
           <button class="photo" type="button" data-index="32" aria-label="Open Terrace 1 at Japandi Lounge">
@@ -231,16 +228,16 @@ a:hover{opacity:.82}
           <button class="photo" type="button" data-index="33" aria-label="Open Terrace 2 at Japandi Lounge">
             <img src="/images/gallery/terras2.webp" alt="Terrace 2 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
-          <button class="photo feature-tall" type="button" data-index="34" aria-label="Open Sauna at Japandi Lounge">
+          <button class="photo" type="button" data-index="34" aria-label="Open Sauna at Japandi Lounge">
             <img src="/images/gallery/sauna.webp" alt="Sauna at Japandi Lounge" loading="lazy" decoding="async">
           </button>
-          <button class="photo feature-wide" type="button" data-index="35" aria-label="Open Garden at Japandi Lounge">
+          <button class="photo" type="button" data-index="35" aria-label="Open Garden at Japandi Lounge">
             <img src="/images/gallery/tuin.webp" alt="Garden at Japandi Lounge" loading="lazy" decoding="async">
           </button>
           <button class="photo" type="button" data-index="36" aria-label="Open Garden 2 at Japandi Lounge">
             <img src="/images/gallery/tuin2.webp" alt="Garden 2 at Japandi Lounge" loading="lazy" decoding="async">
           </button>
-          <button class="photo feature-wide" type="button" data-index="37" aria-label="Open Countryside view at Japandi Lounge">
+          <button class="photo" type="button" data-index="37" aria-label="Open Countryside view at Japandi Lounge">
             <img src="/images/gallery/uitzicht.webp" alt="Countryside view at Japandi Lounge" loading="lazy" decoding="async">
           </button>
         </div>
@@ -289,12 +286,10 @@ const buttonImage=photoButtons[currentIndex].querySelector("img");
 lightboxImage.src="/images/gallery/"+photos[currentIndex];
 lightboxImage.alt=buttonImage.alt;
 lightbox.classList.add("open");
-document.body.classList.add("lightbox-open");
 closeButton.focus();
 }
 function closeLightbox(){
 lightbox.classList.remove("open");
-document.body.classList.remove("lightbox-open");
 photoButtons[currentIndex].focus();
 }
 photoButtons.forEach((button,index)=>button.addEventListener("click",()=>showPhoto(index)));
