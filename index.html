@@ -564,7 +564,8 @@
         transform: scale(1.025);
       }
 
-      .experience:hover {
+      .experience:hover,
+      .faqItem:hover {
         transform: translateY(-2px);
         border-color: rgba(29, 29, 27, 0.24);
         box-shadow: 0 20px 48px rgba(40, 30, 20, 0.11);
@@ -578,6 +579,7 @@
 
       .img img,
       .experience,
+      .faqItem,
       .btn {
         transition: none;
       }
@@ -626,6 +628,11 @@
       border-radius: 14px;
       background: rgba(248, 241, 232, 0.82);
       overflow: hidden;
+
+      transition:
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease;
     }
 
     .faqItem summary {
@@ -1548,6 +1555,18 @@
 
   document.getElementById("y").textContent =
     new Date().getFullYear();
+
+  document.querySelectorAll(".faqItem").forEach((item) => {
+    item.addEventListener("toggle", () => {
+      if (!item.open) return;
+
+      document.querySelectorAll(".faqItem[open]").forEach((other) => {
+        if (other !== item) {
+          other.open = false;
+        }
+      });
+    });
+  });
 
 </script>
 
