@@ -13,7 +13,7 @@
     gtag('config', 'G-TCPSZSL94Z');
   </script>
 
-  <title>Retreats at Japandi Lounge | Recovery Retreats near Den Bosch</title>
+  <title>Japandi Retreats | Recovery Retreats</title>
 
   <meta
     name="description"
@@ -23,7 +23,7 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://japandilounge.com/retreats.html">
 
-  <meta property="og:title" content="Retreats at Japandi Lounge">
+  <meta property="og:title" content="Japandi Retreats">
   <meta
     property="og:description"
     content="Small-group retreats in the countryside near Den Bosch focused on rest, recovery, breathwork, cold exposure, sound healing and connection."
@@ -337,8 +337,10 @@
       display: grid;
 
       grid-template-columns:
-        1.2fr
-        2fr
+        1.1fr
+        1.8fr
+        1.3fr
+        .7fr
         .8fr
         1fr;
 
@@ -372,6 +374,12 @@
     .retreatMeta {
       color: var(--muted);
       font-size: 13px;
+    }
+
+    .retreatPrice {
+      font-size: 13px;
+      font-weight: 500;
+      white-space: nowrap;
     }
 
     .availability {
@@ -538,8 +546,84 @@
 
       .img img,
       .experience,
+      .faqItem,
       .btn {
         transition: none;
+      }
+    }
+
+
+    /* FAQ */
+
+    .faqList {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      align-items: start;
+    }
+
+    .faqItem {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(248, 241, 232, 0.82);
+      overflow: hidden;
+
+      transition:
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease;
+    }
+
+    .faqItem summary {
+      position: relative;
+      cursor: pointer;
+      list-style: none;
+
+      padding: 18px 52px 18px 20px;
+
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .faqItem summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faqItem summary::after {
+      content: "+";
+
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      color: var(--muted);
+      font-size: 22px;
+      font-weight: 300;
+    }
+
+    .faqItem[open] summary::after {
+      content: "−";
+    }
+
+    .faqItem .faqAnswer {
+      padding: 0 20px 18px;
+    }
+
+    .faqItem .faqAnswer p {
+      margin: 0 0 12px;
+    }
+
+    .faqItem .faqAnswer p:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .faqItem:hover {
+        transform: translateY(-2px);
+        border-color: rgba(29, 29, 27, 0.24);
+        box-shadow: 0 20px 48px rgba(40, 30, 20, 0.11);
       }
     }
 
@@ -654,11 +738,11 @@
       }
 
       .retreatRow {
-        grid-template-columns: 1fr 1.6fr 1fr;
+        grid-template-columns: 1fr 1.5fr 1fr;
       }
 
       .retreatRow .duration {
-        display: none;
+        display: block;
       }
     }
 
@@ -666,6 +750,10 @@
     /* MOBILE */
 
     @media (max-width: 720px) {
+
+      .faqList {
+        grid-template-columns: 1fr;
+      }
 
       .container {
         width: min(var(--max), calc(100% - 24px));
@@ -762,6 +850,10 @@
           Home
         </a>
 
+        <a href="#faq">
+          FAQ
+        </a>
+
         <a
           href="https://wa.me/31615230319"
           target="_blank"
@@ -793,11 +885,11 @@
       </span>
 
       <h1 class="pageTitle">
-        Retreats at Japandi Lounge
+        Japandi Retreats
       </h1>
 
       <p class="pageLead">
-        Small-group retreats in the countryside near Den Bosch.
+        Small-group retreats in inspiring locations surrounded by nature.
         Step away from everyday noise and reset through rest,
         breathwork, cold exposure, sound healing and time in nature.
       </p>
@@ -873,13 +965,21 @@
             Intensive Recovery Retreat
           </div>
 
+          <div class="retreatMeta">
+            Japandi Lounge
+          </div>
+
           <div class="retreatMeta duration">
             3 days
           </div>
 
+          <div class="retreatPrice">
+            €975
+          </div>
+
           <div>
             <span class="availability">
-              8 spots available
+              8/10 available
             </span>
           </div>
 
@@ -898,13 +998,21 @@
             Intensive Recovery Retreat
           </div>
 
+          <div class="retreatMeta">
+            Japandi Lounge
+          </div>
+
           <div class="retreatMeta duration">
             3 days
           </div>
 
+          <div class="retreatPrice">
+            €975
+          </div>
+
           <div>
             <span class="availability">
-              10 spots available
+              10/10 available
             </span>
           </div>
 
@@ -923,13 +1031,54 @@
             5 Day Silent Retreat
           </div>
 
+          <div class="retreatMeta">
+            TBC
+          </div>
+
           <div class="retreatMeta duration">
             5 days
           </div>
 
+          <div class="retreatPrice">
+            €2,345
+          </div>
+
           <div>
             <span class="availability">
-              10 spots available
+              10/10 available
+            </span>
+          </div>
+
+        </div>
+
+
+        <!-- RETREAT 4 -->
+
+        <div class="retreatRow">
+
+          <div class="date">
+            TBC
+          </div>
+
+          <div class="retreatName">
+            Intensive Recovery Retreat
+          </div>
+
+          <div class="retreatMeta">
+            Northumberland, UK
+          </div>
+
+          <div class="retreatMeta duration">
+            3 days
+          </div>
+
+          <div class="retreatPrice">
+            TBC
+          </div>
+
+          <div>
+            <span class="availability">
+              10/10 available
             </span>
           </div>
 
@@ -962,14 +1111,8 @@
           </h2>
 
           <p>
-            Japandi Lounge is a restored Brabant farmhouse surrounded by
-            peaceful countryside near ’s-Hertogenbosch.
-          </p>
-
-          <p>
-            The house combines Japanese minimalism with Scandinavian warmth,
-            creating a calm environment for rest, reflection and meaningful
-            time together.
+            Our retreats take place in inspiring locations surrounded by nature,
+            chosen to create space for rest, reflection and meaningful connection.
           </p>
 
           <p>
@@ -1108,7 +1251,7 @@
           </span>
 
           <h2>
-            Retreat in comfort
+            Retreats at Japandi Lounge
           </h2>
 
           <p>
@@ -1121,6 +1264,7 @@
             <li>Sauna</li>
             <li>Wood-fired hot tub / jacuzzi</li>
             <li>Outdoor fire pit</li>
+            <li>2 outdoor BBQs</li>
             <li>Large communal kitchen</li>
             <li>Long dining table for shared meals</li>
             <li>Indoor and outdoor lounge areas</li>
@@ -1169,6 +1313,157 @@
   </section>
 
 
+  <!-- RETREAT FAQ -->
+
+  <section
+    id="faq"
+    class="section">
+
+    <div class="container">
+
+      <div class="sectionIntro">
+
+        <h2>
+          Retreat FAQs
+        </h2>
+
+      </div>
+
+      <div class="faqList">
+
+        <details class="faqItem">
+          <summary>What is an 'Intensive Recovery Retreat'?</summary>
+          <div class="faqAnswer">
+            <p>
+              The Intensive Recovery Retreat is a small-group experience designed to help you step away from everyday routines, screens and constant stimulation, creating space for physical and mental recovery.
+            </p>
+            <p>
+              The programme can include breathwork, cold exposure, sound healing, movement, wellness, silence, shared meals and journaling. A fire ceremony offers a symbolic moment to let go of what you no longer want to carry with you, while leaving plenty of time simply to slow down and reconnect.
+            </p>
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>Why do a '5 Day Silent Retreat'?</summary>
+          <div class="faqAnswer">
+            <p>
+              A silent retreat gives you the rare opportunity to step away from the noise, demands and constant stimulation of everyday life. By removing familiar distractions, you create space to slow down, reflect and become more aware of your thoughts, emotions and habits. The silence allows for deeper meditation, greater mental clarity and a chance to break away from automatic patterns. It is time to reconnect with yourself, process what has been occupying your mind and return to everyday life with a clearer sense of what matters.
+            </p>
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>What is a Silent Retreat?</summary>
+          <div class="faqAnswer">
+            <p>
+              A silent retreat is an extended period in which participants refrain from everyday conversation and spend much of their time in silence. This creates a calm environment for meditation, reflection and guided activities without the usual social distractions. Our planned silent retreat is a five-day experience. Full programme details will be published when dates are confirmed.
+            </p>
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>Do I need previous experience with breathwork or ice baths?</summary>
+          <div class="faqAnswer">
+            <p>
+              No previous experience is necessary. Sessions are intended to be guided and accessible to people joining for the first time as well as those with previous experience.
+            </p>
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>Are ice-bath sessions compulsory?</summary>
+          <div class="faqAnswer">
+            <p>
+              No. None of our activities are compulsory. While we encourage participants to take part, there is always space to step back, rest and listen to what feels right for you.
+            </p>
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>Are meals included in the retreat?</summary>
+          <div class="faqAnswer">
+            <p>
+              Meals are intended to form an important part of the retreat experience, with time to eat and connect together. The exact meals and catering included will be stated with each retreat.
+            </p>
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>Is accommodation included in the retreat?</summary>
+          <div class="faqAnswer">
+            <p>
+              Yes. Accommodation, meals, tourist tax and use of all facilities... it's included in the price.
+            </p>
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>Can I attend a retreat alone?</summary>
+          <div class="faqAnswer">
+            <p>
+              Yes. You do not need to come as part of a group. Our organised retreats are designed for individual participants to join together, creating space to meet like-minded people and form new, meaningful connections along the way.
+            </p>
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>Can couples attend together?</summary>
+          <div class="faqAnswer">
+            <p>
+              Yes, subject to availability. Contact us if you would like to attend as a couple and we can explain the sleeping arrangements for the retreat.
+            </p>
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>What should I bring to a retreat?</summary>
+          <div class="faqAnswer">
+            <p>
+              A detailed packing list will be provided before each retreat. Comfortable clothing, swimwear and clothing suitable for spending time outdoors will generally be useful.
+            </p>
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>Can I use my phone during retreats?</summary>
+          <div class="faqAnswer">
+            <p>
+              Yes, although we strongly encourage participants to switch their phones to silent and leave them packed away during the retreat. Disconnecting from outside distractions is an important part of the experience, giving you the space to fully embrace the silence, be present and focus inward.
+            </p>
+            <p>
+              Tip: If the temptation to check your phone becomes too much, we also have a central location where we can keep it safe for you until you are ready to have it back.
+            </p>
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>Can companies organise a retreat at Japandi Lounge?</summary>
+          <div class="faqAnswer">
+            <p>
+              Yes. The property can also be suitable for small corporate retreats, team sessions and off-sites where the aim is to step away from the usual working environment.
+            </p>
+            <p>
+              Contact us with the size of your team and what you would like to achieve from the retreat.
+            </p>
+          </div>
+        </details>
+
+        <details class="faqItem">
+          <summary>How do I reserve a place on an upcoming retreat?</summary>
+          <div class="faqAnswer">
+            <p>
+              Contact Japandi Lounge through WhatsApp and mention the retreat you are interested in. We will confirm availability, pricing and the next steps for reserving your place.
+            </p>
+          </div>
+        </details>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
   <!-- FINAL CTA -->
 
   <section class="section">
@@ -1178,7 +1473,7 @@
       <div class="card finalCta">
 
         <span class="sectionLabel">
-          Retreats at Japandi Lounge
+          Japandi Retreats
         </span>
 
         <h2>
@@ -1269,6 +1564,18 @@
 <script>
   document.getElementById("y").textContent =
     new Date().getFullYear();
+
+  document.querySelectorAll(".faqItem").forEach((item) => {
+    item.addEventListener("toggle", () => {
+      if (!item.open) return;
+
+      document.querySelectorAll(".faqItem[open]").forEach((other) => {
+        if (other !== item) {
+          other.open = false;
+        }
+      });
+    });
+  });
 </script>
 
 
