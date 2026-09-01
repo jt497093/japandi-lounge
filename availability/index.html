@@ -350,56 +350,6 @@
     }
 
 
-
-    /* =========================
-       FLOATING WHATSAPP
-       ========================= */
-
-    .whatsapp-float {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      z-index: 40;
-
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      width: 52px;
-      height: 52px;
-
-      border-radius: 50%;
-      background: #25D366;
-      color: #fff;
-
-      box-shadow:
-        0 10px 28px rgba(0, 0, 0, 0.18);
-
-      transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-    }
-
-    @media (hover: hover) and (pointer: fine) {
-      .whatsapp-float:hover {
-        opacity: 1;
-        transform: translateY(-2px);
-        box-shadow:
-          0 12px 32px rgba(0, 0, 0, 0.23);
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-
-      .whatsapp-float {
-        transition: none;
-      }
-    }
-
-
     /* =========================
        FOOTER
        ========================= */
