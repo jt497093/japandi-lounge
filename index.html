@@ -628,6 +628,101 @@
     }
 
 
+
+    /* GUEST REVIEWS */
+
+    .reviewsHeader {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+    }
+
+    .reviewsHeader .sectionIntro {
+      margin-bottom: 0;
+    }
+
+    .reviewTrust {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(223, 198, 168, 0.28);
+      color: var(--text);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .reviewsGrid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .reviewCard {
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition:
+        transform 0.22s ease,
+        border-color 0.22s ease,
+        box-shadow 0.22s ease;
+    }
+
+    .reviewStars {
+      margin-bottom: 18px;
+      font-size: 15px;
+      letter-spacing: 2px;
+      color: var(--text);
+    }
+
+    .reviewQuote {
+      margin: 0;
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .reviewMeta {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .reviewName {
+      display: block;
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .reviewDate {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .reviewCard:hover {
+        transform: translateY(-2px);
+        border-color: rgba(29, 29, 27, 0.24);
+        box-shadow: 0 20px 48px rgba(40, 30, 20, 0.11);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .reviewsGrid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
     /* RETREAT BLOCK */
 
     .retreatCard {
@@ -1287,6 +1382,126 @@
           </video>
 
         </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+  <!-- GUEST REVIEWS -->
+
+  <section
+    id="reviews"
+    class="section">
+
+    <div class="container">
+
+      <div class="reviewsHeader">
+
+        <div class="sectionIntro">
+
+          <span class="sectionLabel">
+            Guest reviews
+          </span>
+
+          <h2>
+            What our guests say
+          </h2>
+
+        </div>
+
+        <div class="reviewTrust">
+          ★ Airbnb Superhost · 5.0/5
+        </div>
+
+      </div>
+
+
+      <div class="reviewsGrid">
+
+        <article class="card reviewCard">
+
+          <div>
+            <div
+              class="reviewStars"
+              aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+
+            <p class="reviewQuote">
+              “The place is a dream! It has been furnished with so much care and leaves nothing to be desired. Jamie gave us a very warm welcome and explained everything calmly. We had an amazing time and would definitely recommend it.”
+            </p>
+          </div>
+
+          <div class="reviewMeta">
+            <span class="reviewName">
+              Jil
+            </span>
+
+            <span class="reviewDate">
+              Airbnb guest · February 2026
+            </span>
+          </div>
+
+        </article>
+
+
+        <article class="card reviewCard">
+
+          <div>
+            <div
+              class="reviewStars"
+              aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+
+            <p class="reviewQuote">
+              “We had a wonderful weekend with friends in a beautiful and spacious house. Great facilities and a lovely garden with comfortable seating areas, sauna and hot tub. Highly recommended!”
+            </p>
+          </div>
+
+          <div class="reviewMeta">
+            <span class="reviewName">
+              Niels
+            </span>
+
+            <span class="reviewDate">
+              Airbnb guest · June 2026
+            </span>
+          </div>
+
+        </article>
+
+
+        <article class="card reviewCard">
+
+          <div>
+            <div
+              class="reviewStars"
+              aria-label="5 out of 5 stars">
+              ★★★★★
+            </div>
+
+            <p class="reviewQuote">
+              “Fantastic accommodation! Jamie was a perfect host and always responded quickly and kindly. Everything you need is provided and it is exactly as shown in the photos. It is also very close to the centre of Den Bosch. Definitely recommended!”
+            </p>
+          </div>
+
+          <div class="reviewMeta">
+            <span class="reviewName">
+              Suzan
+            </span>
+
+            <span class="reviewDate">
+              Airbnb guest · March 2026
+            </span>
+          </div>
+
+        </article>
 
       </div>
 
